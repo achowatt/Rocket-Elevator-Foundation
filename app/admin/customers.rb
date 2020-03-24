@@ -1,5 +1,5 @@
 ActiveAdmin.register Customer do
-  belongs_to :address, polymorphic: true 
+  # belongs_to :address, polymorphic: true 
   permit_params :customer_create_date, :company_name, :name_company_contact, :company_phone, :contact_email, :company_desc, :full_name_STA, :tech_authority_phone, :tech_manager_email, :address_id
 
   sidebar "Customer Details", only: [:show, :edit] do

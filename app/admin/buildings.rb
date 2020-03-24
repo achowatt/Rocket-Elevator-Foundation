@@ -1,5 +1,5 @@
 ActiveAdmin.register Building do
-    belongs_to :customer, polymorphic: true 
+    #belongs_to :customer, polymorphic: true 
     permit_params :admin_full_name, :admin_email, :admin_phone, :tech_full_name, :tech_email, :tech_phone, :customer_id, :address_id
     
     sidebar "Building Details", only: [:show, :edit] do
