@@ -1,0 +1,7 @@
+# Add configuration values here, as shown below.
+#
+
+TWILIO_PHONE_NUMBER: '+12058434290'
+TWILIO_ACCOUNT_SID: 'AC0b9becc43550f7fa0734ac516daec83a'
+TWILIO_AUTH_TOKEN:  '9b1557d605f0b6e155538087e9915a33'
+
