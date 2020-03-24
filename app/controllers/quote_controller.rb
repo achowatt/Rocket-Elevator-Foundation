@@ -10,6 +10,8 @@ class QuoteController < ApplicationController
     @quote = Quote.new(quote_params)
     #render json: @quote #test when submit button form
     if @quote.save
+      message = "Your quote has been submitted successfully!"
+      TwilioTextMessenger.new(message).call
       flash[:notice] = "add new quete successfull "
       redirect_to :index
     else
