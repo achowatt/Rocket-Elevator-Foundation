@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   
   root 'leads#new'
-
+  get 'geolocation/google'
   get 'index' => 'leads#new' # index
   get 'corporate' => 'pages#corporate' # corporate
   get 'residential' => 'pages#residential' # residential
