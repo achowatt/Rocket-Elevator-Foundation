@@ -1,0 +1,842 @@
+Started GET "/" for ::1 at 2020-03-24 20:57:13 -0400
+  [1m[35m (40.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (20.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by LeadsController#new as HTML
+  Rendering leads/new.html.erb within layouts/application
+Started GET "/" for ::1 at 2020-03-24 20:57:17 -0400
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by LeadsController#new as HTML
+  Rendering leads/new.html.erb within layouts/application
+  Rendered leads/_index.html.erb (17516.5ms)
+  Rendered leads/_index.html.erb (13963.0ms)
+  Rendered leads/_index_end.html.erb (154.7ms)
+  Rendered leads/new.html.erb within layouts/application (17684.9ms)
+  Rendered leads/_index_end.html.erb (163.3ms)
+  Rendered leads/new.html.erb within layouts/application (14130.3ms)
+Completed 200 OK in 18293ms (Views: 18212.1ms | ActiveRecord: 63.1ms)
+
+
+Completed 200 OK in 14657ms (Views: 14654.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for ::1 at 2020-03-24 20:57:50 -0400
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for ::1 at 2020-03-24 20:57:50 -0400
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/devise/shared/_links.erb (2.1ms)
+  Rendered /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (151.4ms)
+Completed 200 OK in 520ms (Views: 465.9ms | ActiveRecord: 35.6ms)
+
+
+Started POST "/admin/login" for ::1 at 2020-03-24 20:57:55 -0400
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h8z6QaVS4UF2qlkY7G9SWEsHLSf2YPtYOJip2BgWqzGaJYKD4mEDO7eXDbam7bV5nnhhELqYtmrSifi4q4YeqA==", "employee"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Login"}
+  [1m[36mEmployee Load (36.9ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`email` = 'admin@example.com' ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 257ms (ActiveRecord: 36.9ms)
+
+
+Started GET "/admin" for ::1 at 2020-03-24 20:57:55 -0400
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mEmployee Load (0.6ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendering /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/page/index.html.arb
+  Rendered /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/page/index.html.arb (249.4ms)
+Completed 200 OK in 265ms (Views: 252.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/addresses" for ::1 at 2020-03-24 20:57:58 -0400
+Processing by Admin::AddressesController#index as HTML
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendering /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb
+  [1m[35m (16.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `addresses` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `addresses` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `addresses`[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `addresses` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mAddress Load (0.5ms)[0m  [1m[34mSELECT  `addresses`.* FROM `addresses` ORDER BY `addresses`.`id` desc LIMIT 30 OFFSET 0[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendered /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb (317.7ms)
+Completed 200 OK in 349ms (Views: 302.2ms | ActiveRecord: 33.3ms)
+
+
+Started GET "/admin/employees" for ::1 at 2020-03-24 20:58:01 -0400
+Processing by Admin::EmployeesController#index as HTML
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendering /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `employees` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `employees` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `employees`[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `employees` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` ORDER BY `employees`.`id` desc LIMIT 30 OFFSET 0[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendered /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb (165.3ms)
+Completed 200 OK in 172ms (Views: 166.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/admin" for ::1 at 2020-03-24 21:02:45 -0400
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendering /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/page/index.html.arb
+  Rendered /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/page/index.html.arb (1993.4ms)
+Completed 200 OK in 2048ms (Views: 2005.9ms | ActiveRecord: 14.7ms)
+
+
+Started GET "/" for ::1 at 2020-03-24 21:02:57 -0400
+Processing by LeadsController#new as HTML
+  Rendering leads/new.html.erb within layouts/application
+  Rendered leads/_index.html.erb (38.2ms)
+  Rendered leads/_index_end.html.erb (93.5ms)
+  Rendered leads/new.html.erb within layouts/application (144.4ms)
+  [1m[36mLead Load (22.9ms)[0m  [1m[34mSELECT  `leads`.* FROM `leads` ORDER BY `leads`.`id` DESC LIMIT 1[0m
+  ↳ app/controllers/leads_controller.rb:9
+Completed 500 Internal Server Error in 611ms (Views: 537.9ms | ActiveRecord: 42.4ms)
+
+
+  
+NoMethodError (undefined method `lead_full_name' for #<Lead:0x00007fa34b4d38e8>):
+  
+app/controllers/leads_controller.rb:10:in `block in <class:LeadsController>'
+Started GET "/" for ::1 at 2020-03-24 21:06:40 -0400
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by LeadsController#new as HTML
+  Rendering leads/new.html.erb within layouts/application
+  Rendered leads/_index.html.erb (785.7ms)
+  Rendered leads/_index_end.html.erb (30.3ms)
+  Rendered leads/new.html.erb within layouts/application (823.1ms)
+  [1m[36mLead Load (0.8ms)[0m  [1m[34mSELECT  `leads`.* FROM `leads` ORDER BY `leads`.`id` DESC LIMIT 1[0m
+  ↳ app/controllers/leads_controller.rb:9
+Completed 500 Internal Server Error in 1067ms (Views: 1014.6ms | ActiveRecord: 12.4ms)
+
+
+  
+NoMethodError (undefined method `lead_company_name' for #<Lead:0x00007fecab3f0d28>):
+  
+app/controllers/leads_controller.rb:10:in `block in <class:LeadsController>'
+Started GET "/" for ::1 at 2020-03-24 21:10:22 -0400
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by LeadsController#new as HTML
+  Rendering leads/new.html.erb within layouts/application
+  Rendered leads/_index.html.erb (791.9ms)
+  Rendered leads/_index_end.html.erb (37.7ms)
+  Rendered leads/new.html.erb within layouts/application (835.4ms)
+  [1m[36mLead Load (0.6ms)[0m  [1m[34mSELECT  `leads`.* FROM `leads` ORDER BY `leads`.`id` DESC LIMIT 1[0m
+  ↳ app/controllers/leads_controller.rb:9
+Completed 500 Internal Server Error in 1086ms (Views: 1043.6ms | ActiveRecord: 11.6ms)
+
+
+  
+NoMethodError (undefined method `connection' for nil:NilClass):
+  
+config/initializers/zendesk.rb:46:in `create_ticket'
+app/controllers/leads_controller.rb:10:in `block in <class:LeadsController>'
+Started GET "/" for ::1 at 2020-03-24 21:28:16 -0400
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by LeadsController#new as HTML
+  Rendering leads/new.html.erb within layouts/application
+  Rendered leads/_index.html.erb (1878.0ms)
+  Rendered leads/_index_end.html.erb (84.6ms)
+  Rendered leads/new.html.erb within layouts/application (1973.2ms)
+  [1m[36mLead Load (0.7ms)[0m  [1m[34mSELECT  `leads`.* FROM `leads` ORDER BY `leads`.`id` DESC LIMIT 1[0m
+  ↳ app/controllers/leads_controller.rb:9
+Completed 500 Internal Server Error in 2385ms (Views: 2345.3ms | ActiveRecord: 14.3ms)
+
+
+  
+NoMethodError (undefined method `connection' for nil:NilClass):
+  
+config/initializers/zendesk.rb:46:in `create_ticket'
+app/controllers/leads_controller.rb:10:in `block in <class:LeadsController>'
+Started GET "/" for ::1 at 2020-03-24 21:54:34 -0400
+  [1m[35m (1.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by LeadsController#new as HTML
+  Rendering leads/new.html.erb within layouts/application
+  Rendered leads/_index.html.erb (1794.3ms)
+  Rendered leads/_index_end.html.erb (78.5ms)
+  Rendered leads/new.html.erb within layouts/application (1886.4ms)
+Completed 200 OK in 2283ms (Views: 2240.7ms | ActiveRecord: 19.4ms)
+
+
+Started GET "/admin" for ::1 at 2020-03-24 21:55:11 -0400
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mEmployee Load (0.6ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendering /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/page/index.html.arb
+  Rendered /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/page/index.html.arb (532.3ms)
+Completed 200 OK in 929ms (Views: 538.0ms | ActiveRecord: 172.7ms)
+
+
+Started GET "/admin" for ::1 at 2020-03-24 22:02:11 -0400
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mEmployee Load (0.6ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendering /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/page/index.html.arb
+  Rendered /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/page/index.html.arb (3908.3ms)
+Completed 200 OK in 3984ms (Views: 3920.3ms | ActiveRecord: 34.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-24 22:02:17 -0400
+Processing by LeadsController#new as HTML
+  Rendering leads/new.html.erb within layouts/application
+  Rendered leads/_index.html.erb (28.7ms)
+  Rendered leads/_index_end.html.erb (82.5ms)
+  Rendered leads/new.html.erb within layouts/application (125.4ms)
+Completed 200 OK in 547ms (Views: 463.1ms | ActiveRecord: 57.9ms)
+
+
+Started GET "/admin" for ::1 at 2020-03-24 22:02:31 -0400
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mEmployee Load (1.1ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendering /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/page/index.html.arb
+  Rendered /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/page/index.html.arb (224.1ms)
+Completed 200 OK in 232ms (Views: 227.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/quotes" for ::1 at 2020-03-24 22:02:39 -0400
+Processing by Admin::QuotesController#index as HTML
+  [1m[36mEmployee Load (1.1ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendering /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb
+  [1m[35m (9.9ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `quotes` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `quotes` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (5.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `quotes`[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `quotes` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuote Load (0.9ms)[0m  [1m[34mSELECT  `quotes`.* FROM `quotes` ORDER BY `quotes`.`id` desc LIMIT 30 OFFSET 0[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendered /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb (375.3ms)
+Completed 200 OK in 491ms (Views: 367.1ms | ActiveRecord: 40.7ms)
+
+
+Started GET "/admin" for ::1 at 2020-03-24 22:02:56 -0400
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mEmployee Load (7.9ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendering /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/page/index.html.arb
+  Rendered /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/page/index.html.arb (220.1ms)
+Completed 200 OK in 232ms (Views: 221.6ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/quoteform" for ::1 at 2020-03-24 22:02:59 -0400
+Processing by QuoteController#new as HTML
+  Rendering quote/new.html.erb within layouts/application
+  Rendered quote/_form.html.erb (1.5ms)
+  Rendered quote/_form_end.html.erb (108.0ms)
+  Rendered quote/new.html.erb within layouts/application (117.8ms)
+Completed 200 OK in 389ms (Views: 384.9ms | ActiveRecord: 0.0ms)
+
+
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/javascripts/plugins/form.validate/jquery.form.min.js"):
+  
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.4.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.4.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.4.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.4.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+ActionController::RoutingError (No route matches [GET] "/assets/javascripts/plugins/bootstrap/js/bootstrap.min.js"):
+  
+ActionController::RoutingError (No route matches [GET] "/assets/javascripts/plugins/jquery.nav.min.js"):
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.4.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.4.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.4.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.4.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.4.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.4.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.4.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.4.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/quote" for ::1 at 2020-03-24 22:04:32 -0400
+Processing by QuoteController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Nc5LXh6MO6ZKVStF+D3GX7OMtHtDUuc/FhiYuEFZ52FmjT83t6d9Lbu2q6zA9hghTOwz/E6swkRre5FyYdgj4w==", "quote"=>{"Full_Name"=>"Peter", "Phone_Number"=>"1100", "Company_Name"=>"Nate", "Email"=>"nate@dim.com", "Building_Type"=>"Residential", "Nb_Appartement"=>"23", "Nb_Business"=>"", "Nb_Company"=>"", "Nb_Floor"=>"8", "Nb_Basement"=>"1", "Nb_Parking"=>"", "Nb_Cage"=>"", "Nb_OccupantPerFloor"=>"", "Nb_OperatingHour"=>"", "Product_Grade"=>"exc", "Nb_Ele_Suggested"=>"1", "Price_Per_Ele"=>"$15,400", "Subtotal"=>"$ 15400.00", "Install_Fee"=>"$ 2464.00", "Final_Price"=>"$ 17864.00"}, "commit"=>"Submit"}
+Unpermitted parameter: :Nb_OperatingHour
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/quote_controller.rb:12
+  [1m[36mQuote Create (21.6ms)[0m  [1m[32mINSERT INTO `quotes` (`Full_Name`, `Phone_Number`, `Company_Name`, `Email`, `Building_Type`, `Product_Grade`, `Nb_Appartement`, `Nb_Floor`, `Nb_Basement`, `Nb_Ele_Suggested`, `Price_Per_Ele`, `Subtotal`, `Install_Fee`, `Final_Price`, `created_at`, `updated_at`) VALUES ('Peter', 1100, 'Nate', 'nate@dim.com', 'Residential', 'exc', 23, 8, 1, '1', '$15,400', '$ 15400.00', '$ 2464.00', '$ 17864.00', '2020-03-25 02:04:32', '2020-03-25 02:04:32')[0m
+  ↳ app/controllers/quote_controller.rb:12
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/quote_controller.rb:12
+Redirected to http://localhost:3000/index
+Completed 302 Found in 35ms (ActiveRecord: 25.1ms)
+
+
+Started GET "/index" for ::1 at 2020-03-24 22:04:32 -0400
+Processing by LeadsController#new as HTML
+  Rendering leads/new.html.erb within layouts/application
+  Rendered leads/_index.html.erb (19.2ms)
+  Rendered leads/_index_end.html.erb (20.6ms)
+  Rendered leads/new.html.erb within layouts/application (46.9ms)
+Completed 200 OK in 161ms (Views: 157.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/leads" for ::1 at 2020-03-24 22:07:10 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"glwCOKJ8ppIyZMtnLquqY1/abp9zDqEZRt+obhxGyvbRH3ZRC1fgGcOHS44WYHQdoLrpGH7whGI7vKGkPMcOdA==", "lead"=>{"full_name"=>"Tim", "email"=>"derer@timmy.com", "phone"=>"5254687872", "company_name"=>"Redder", "project_name"=>"Greeny", "department"=>"Residential", "project_desc"=>"Treehouse construction in the playground", "message"=>"cokkie yummy triand for the micky mouse commition ideas", "attached_file"=>""}, "commit"=>"Submit"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/leads_controller.rb:25
+  [1m[36mLead Create (13.4ms)[0m  [1m[32mINSERT INTO `leads` (`full_name`, `company_name`, `email`, `phone`, `project_name`, `project_desc`, `department`, `message`, `attached_file`, `created_at`, `updated_at`) VALUES ('Tim', 'Redder', 'derer@timmy.com', '5254687872', 'Greeny', 'Treehouse construction in the playground', 'Residential', 'cokkie yummy triand for the micky mouse commition ideas', x'', '2020-03-25 02:07:13', '2020-03-25 02:07:13')[0m
+  ↳ app/controllers/leads_controller.rb:25
+  [1m[35m (10.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/leads_controller.rb:25
+Redirected to http://localhost:3000/index
+Completed 302 Found in 2241ms (ActiveRecord: 24.5ms)
+
+
+Started GET "/index" for ::1 at 2020-03-24 22:07:13 -0400
+Processing by LeadsController#new as HTML
+  Rendering leads/new.html.erb within layouts/application
+  Rendered leads/_index.html.erb (28.5ms)
+  Rendered leads/_index_end.html.erb (36.1ms)
+  Rendered leads/new.html.erb within layouts/application (70.7ms)
+Completed 200 OK in 252ms (Views: 249.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-25 13:22:48 -0400
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by LeadsController#new as HTML
+  Rendering leads/new.html.erb within layouts/application
+  Rendered leads/_index.html.erb (37.7ms)
+  Rendered leads/_index_end.html.erb (49.2ms)
+  Rendered leads/new.html.erb within layouts/application (127.9ms)
+Completed 200 OK in 390ms (Views: 368.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admin" for ::1 at 2020-03-25 13:22:58 -0400
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mEmployee Load (84.0ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendering /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/page/index.html.arb
+  Rendered /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/page/index.html.arb (311.6ms)
+Completed 200 OK in 422ms (Views: 318.8ms | ActiveRecord: 84.0ms)
+
+
+Started GET "/admin/leads" for ::1 at 2020-03-25 13:23:18 -0400
+Processing by Admin::LeadsController#index as HTML
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendering /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb
+  [1m[35m (12.5ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `leads` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `leads` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (9.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `leads`[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `leads` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mLead Load (1.2ms)[0m  [1m[34mSELECT  `leads`.* FROM `leads` ORDER BY `leads`.`id` desc LIMIT 30 OFFSET 0[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendered /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb (535.3ms)
+Completed 200 OK in 552ms (Views: 519.3ms | ActiveRecord: 23.2ms)
+
+
+Started GET "/admin/addresses" for ::1 at 2020-03-25 13:23:22 -0400
+Processing by Admin::AddressesController#index as HTML
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendering /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `addresses` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `addresses` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `addresses`[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `addresses` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mAddress Load (0.9ms)[0m  [1m[34mSELECT  `addresses`.* FROM `addresses` ORDER BY `addresses`.`id` desc LIMIT 30 OFFSET 0[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendered /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb (244.0ms)
+Completed 200 OK in 362ms (Views: 244.3ms | ActiveRecord: 108.4ms)
+
+
+Started GET "/admin/addresses?order=status_desc" for ::1 at 2020-03-25 13:23:25 -0400
+Processing by Admin::AddressesController#index as HTML
+  Parameters: {"order"=>"status_desc"}
+  [1m[36mEmployee Load (3.3ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendering /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `addresses` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `addresses` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `addresses`[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `addresses` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mAddress Load (3.5ms)[0m  [1m[34mSELECT  `addresses`.* FROM `addresses` ORDER BY `addresses`.`status` desc LIMIT 30 OFFSET 0[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendered /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb (252.0ms)
+Completed 200 OK in 261ms (Views: 249.1ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/admin/addresses?order=status_asc" for ::1 at 2020-03-25 13:23:26 -0400
+Processing by Admin::AddressesController#index as HTML
+  Parameters: {"order"=>"status_asc"}
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendering /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `addresses` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `addresses` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `addresses`[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `addresses` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mAddress Load (0.7ms)[0m  [1m[34mSELECT  `addresses`.* FROM `addresses` ORDER BY `addresses`.`status` asc LIMIT 30 OFFSET 0[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendered /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb (185.0ms)
+Completed 200 OK in 192ms (Views: 185.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/admin/comments" for ::1 at 2020-03-25 13:23:36 -0400
+Processing by Admin::CommentsController#index as HTML
+  [1m[36mEmployee Load (1.7ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendering /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb
+  [1m[35m (19.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `active_admin_comments` WHERE `active_admin_comments`.`namespace` = 'admin'[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `active_admin_comments` WHERE `active_admin_comments`.`namespace` = 'admin' LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (18.8ms)[0m  [1m[34mSELECT DISTINCT `active_admin_comments`.`resource_type` FROM `active_admin_comments` ORDER BY resource_type asc[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (6.7ms)[0m  [1m[34mSELECT DISTINCT `active_admin_comments`.`author_type` FROM `active_admin_comments` ORDER BY author_type asc[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendered /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb (212.0ms)
+Completed 200 OK in 247ms (Views: 168.6ms | ActiveRecord: 74.0ms)
+
+
+Started GET "/admin/employees" for ::1 at 2020-03-25 13:23:39 -0400
+Processing by Admin::EmployeesController#index as HTML
+  [1m[36mEmployee Load (2.1ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendering /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `employees` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `employees` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `employees`[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `employees` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` ORDER BY `employees`.`id` desc LIMIT 30 OFFSET 0[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendered /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb (126.9ms)
+Completed 200 OK in 136ms (Views: 126.8ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/admin/leads" for ::1 at 2020-03-25 13:23:46 -0400
+Processing by Admin::LeadsController#index as HTML
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendering /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `leads` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `leads` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `leads`[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `leads` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mLead Load (0.6ms)[0m  [1m[34mSELECT  `leads`.* FROM `leads` ORDER BY `leads`.`id` desc LIMIT 30 OFFSET 0[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendered /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb (254.4ms)
+Completed 200 OK in 263ms (Views: 256.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/admin/quotes" for ::1 at 2020-03-25 13:24:09 -0400
+Processing by Admin::QuotesController#index as HTML
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendering /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `quotes` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `quotes` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `quotes`[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `quotes` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mQuote Load (0.6ms)[0m  [1m[34mSELECT  `quotes`.* FROM `quotes` ORDER BY `quotes`.`id` desc LIMIT 30 OFFSET 0[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendered /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb (212.3ms)
+Completed 200 OK in 218ms (Views: 212.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/admin/users" for ::1 at 2020-03-25 13:24:13 -0400
+Processing by Admin::UsersController#index as HTML
+  [1m[36mEmployee Load (0.6ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendering /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb
+  [1m[35m (7.6ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `users` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `users` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT COUNT(*) FROM `users`[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `users` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`id` desc LIMIT 30 OFFSET 0[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendered /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb (148.8ms)
+Completed 200 OK in 168ms (Views: 140.5ms | ActiveRecord: 23.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-25 14:17:35 -0400
+  [1m[35m (7.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by LeadsController#new as HTML
+  Rendering leads/new.html.erb within layouts/application
+  Rendered leads/_index.html.erb (2018.1ms)
+  Rendered leads/_index_end.html.erb (71.2ms)
+  Rendered leads/new.html.erb within layouts/application (2100.5ms)
+Completed 200 OK in 2509ms (Views: 2463.3ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/admin" for ::1 at 2020-03-25 14:17:40 -0400
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mEmployee Load (1.1ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  Rendering /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/page/index.html.arb
+  Rendered /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/page/index.html.arb (481.1ms)
+Completed 200 OK in 609ms (Views: 487.6ms | ActiveRecord: 74.7ms)
+
+
+Started POST "/leads" for ::1 at 2020-03-25 14:19:10 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V3tefjKKV8phwnrbATnoTNiw1pPhFp2m8icCJejbGAcEOCoXm6ERQZAh+jI58jYyJ9BRFOzouN2PRAvvyFrchQ==", "lead"=>{"full_name"=>"Sam", "email"=>"James@tweet.co", "phone"=>"3729872345", "company_name"=>"Garnet", "project_name"=>"Creamcake", "department"=>"Corporate", "project_desc"=>"Ice cream is a beautiful thing in winter but even more awesome in summer", "message"=>"Keep it real. Fix the elevators", "attached_file"=>""}, "commit"=>"Submit"}
+Completed 500 Internal Server Error in 567ms (ActiveRecord: 0.0ms)
+
+
+  
+ZendeskAPI::Error::NetworkError (the server responded with status 401 -- post https://rocketelevator.zendesk.com/api/v2/tickets):
+  
+app/controllers/leads_controller.rb:13:in `create'
+Started POST "/leads" for ::1 at 2020-03-25 14:32:47 -0400
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V3tefjKKV8phwnrbATnoTNiw1pPhFp2m8icCJejbGAcEOCoXm6ERQZAh+jI58jYyJ9BRFOzouN2PRAvvyFrchQ==", "lead"=>{"full_name"=>"Sam", "email"=>"James@tweet.co", "phone"=>"3729872345", "company_name"=>"Garnet", "project_name"=>"Creamcake", "department"=>"Corporate", "project_desc"=>"Ice cream is a beautiful thing in winter but even more awesome in summer", "message"=>"Keep it real. Fix the elevators", "attached_file"=>""}, "commit"=>"Submit"}
+Completed 500 Internal Server Error in 1613ms (ActiveRecord: 15.2ms)
+
+
+  
+ZendeskAPI::Error::NetworkError (the server responded with status 401 -- post https://rocketelevator.zendesk.com/api/v2/tickets):
+  
+app/controllers/leads_controller.rb:13:in `create'
+Started GET "/" for ::1 at 2020-03-25 14:32:59 -0400
+Processing by LeadsController#new as HTML
+  Rendering leads/new.html.erb within layouts/application
+  Rendered leads/_index.html.erb (1760.8ms)
+  Rendered leads/_index_end.html.erb (78.8ms)
+  Rendered leads/new.html.erb within layouts/application (1850.4ms)
+Completed 200 OK in 2272ms (Views: 2268.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/leads" for ::1 at 2020-03-25 14:33:42 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fkKdyfz6fabIiVAmbBCWx4lbHWgILwubZmEyqO57LfgtAemgVdE7LTlq0M9U20i5djua7wXRLuAbAjtizvrpeg==", "lead"=>{"full_name"=>"Sam", "email"=>"James@tweet.co", "phone"=>"3723457998", "company_name"=>"Garnet", "project_name"=>"Creamcake", "department"=>"Corporate", "project_desc"=>"Ice cream is a beautiful thing in winter but even more awesome in summer", "message"=>"keeping it real incorporated", "attached_file"=>""}, "commit"=>"Submit"}
+Completed 500 Internal Server Error in 992ms (ActiveRecord: 0.0ms)
+
+
+  
+ZendeskAPI::Error::NetworkError (the server responded with status 401 -- post https://rocketelevator.zendesk.com/api/v2/tickets):
+  
+app/controllers/leads_controller.rb:13:in `create'
+Started GET "/" for ::1 at 2020-03-25 14:40:55 -0400
+  [1m[35m (1.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by LeadsController#new as HTML
+  Rendering leads/new.html.erb within layouts/application
+  Rendered leads/_index.html.erb (1993.4ms)
+  Rendered leads/_index_end.html.erb (89.0ms)
+  Rendered leads/new.html.erb within layouts/application (2095.8ms)
+Completed 200 OK in 2608ms (Views: 2550.3ms | ActiveRecord: 19.5ms)
+
+
+Started POST "/leads" for ::1 at 2020-03-25 14:41:58 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XzOJZnjRMi6PhLmG0d45+0yds8+760Qi7Vp/CulzFVYMcP0P0fp0pX5nOW/pFeeFs/00SLYVYVmQOXbAyfLR1A==", "lead"=>{"full_name"=>"Tim", "email"=>"James@tweet.co", "phone"=>"05147343532", "company_name"=>"Redder", "project_name"=>"Creamcake", "department"=>"Corporate", "project_desc"=>"Ice cream is a beautiful thing in winter but even more awesome in summer", "message"=>"greatest love in the happiness for all things in the summer holiday", "attached_file"=>""}, "commit"=>"Submit"}
+Completed 500 Internal Server Error in 1000ms (ActiveRecord: 0.0ms)
+
+
+  
+ZendeskAPI::Error::NetworkError (the server responded with status 401 -- post https://rocketelevator.zendesk.com/api/v2/tickets):
+  
+app/controllers/leads_controller.rb:13:in `create'
+Started GET "/" for ::1 at 2020-03-25 14:48:47 -0400
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by LeadsController#new as HTML
+  Rendering leads/new.html.erb within layouts/application
+  Rendered leads/_index.html.erb (1839.0ms)
+  Rendered leads/_index_end.html.erb (68.3ms)
+  Rendered leads/new.html.erb within layouts/application (1918.8ms)
+Completed 200 OK in 2338ms (Views: 2275.4ms | ActiveRecord: 31.9ms)
+
+
+Started POST "/leads" for ::1 at 2020-03-25 14:49:47 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rUbW639TEZtFB5wb4exWiw3/p6Dm0svcGvRsYPsDXon+BaKC1nhXELTkHPLZJ4j18p8gJ+ss7qdnl2Wq24KaCw==", "lead"=>{"full_name"=>"Sam", "email"=>"James@tweet.co", "phone"=>"5663772998", "company_name"=>"Garnet", "project_name"=>"Creamcake", "department"=>"Question", "project_desc"=>"Ice cream is a beautiful thing in winter but even more awesome in summer", "message"=>"This is the grand story of fun. Ice cream is a beautiful thing in winter but even more awesome in summer", "attached_file"=>""}, "commit"=>"Submit"}
+Completed 500 Internal Server Error in 495ms (ActiveRecord: 0.0ms)
+
+
+  
+ZendeskAPI::Error::NetworkError (the server responded with status 401 -- post https://rocketelevator.zendesk.com/api/v2/tickets):
+  
+app/controllers/leads_controller.rb:13:in `create'
+Started GET "/" for ::1 at 2020-03-25 14:57:49 -0400
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by LeadsController#new as HTML
+  Rendering leads/new.html.erb within layouts/application
+  Rendered leads/_index.html.erb (1955.2ms)
+  Rendered leads/_index_end.html.erb (69.7ms)
+  Rendered leads/new.html.erb within layouts/application (2037.1ms)
+Completed 200 OK in 2443ms (Views: 2405.8ms | ActiveRecord: 16.5ms)
+
+
+Started POST "/leads" for ::1 at 2020-03-25 14:58:27 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XafjGLOBBwOfUCtBKvmDyFS15YtE/3pNIPZoSQs/3QAO5JdxGqpBiG6zq6gSMl22q9ViDEkBXzZdlWGDK74Zgg==", "lead"=>{"full_name"=>"Tim", "email"=>"James@tweet.co", "phone"=>"5543377889", "company_name"=>"Garnet", "project_name"=>"Creamcake", "department"=>"Corporate", "project_desc"=>"Ice cream is a beautiful thing in winter but even more awesome in summer", "message"=>"the international gem", "attached_file"=>""}, "commit"=>"Submit"}
+Completed 500 Internal Server Error in 774ms (ActiveRecord: 0.0ms)
+
+
+  
+ZendeskAPI::Error::NetworkError (the server responded with status 401 -- post https://rocketelevator.zendesk.com/api/v2/tickets):
+  
+app/controllers/leads_controller.rb:13:in `create'
+Started GET "/" for ::1 at 2020-03-25 15:36:28 -0400
+  [1m[35m (6.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by LeadsController#new as HTML
+  Rendering leads/new.html.erb within layouts/application
+  Rendered leads/_index.html.erb (2376.9ms)
+  Rendered leads/_index_end.html.erb (87.2ms)
+  Rendered leads/new.html.erb within layouts/application (2480.2ms)
+Completed 200 OK in 3009ms (Views: 2948.7ms | ActiveRecord: 18.9ms)
+
+
+Started POST "/leads" for ::1 at 2020-03-25 15:37:44 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gjqtwou01DMDQDsViOAnIdjn6UhMIiv4lceLZT0hTFHRedmrIp+SuPKju/ywK/lfJ4duz0HcDoPopIKvHaCI0w==", "lead"=>{"full_name"=>"Sam", "email"=>"James@tweet.co", "phone"=>"05147075543", "company_name"=>"Garnet", "project_name"=>"Creamcake", "department"=>"Corporate", "project_desc"=>"Ice cream is a beautiful thing in winter but even more awesome in summer", "message"=>"MacOS / Linux one-liner\r\nAn easy way to get a default git ignore without messing about with create/copy/paste is to use the curl command from the terminal. First cd into your projects root directory and then run the command by replacing MY_API_NAME with your API name from one of the following two sources:\r\n\r\n", "attached_file"=>""}, "commit"=>"Submit"}
+  [1m[35m (7.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/leads_controller.rb:25
+  [1m[36mLead Create (15.5ms)[0m  [1m[32mINSERT INTO `leads` (`full_name`, `company_name`, `email`, `phone`, `project_name`, `project_desc`, `department`, `message`, `attached_file`, `created_at`, `updated_at`) VALUES ('Sam', 'Garnet', 'James@tweet.co', '05147075543', 'Creamcake', 'Ice cream is a beautiful thing in winter but even more awesome in summer', 'Corporate', 'MacOS / Linux one-liner\r\nAn easy way to get a default git ignore without messing about with create/copy/paste is to use the curl command from the terminal. First cd into your projects root directory and then run the command by replacing MY_API_NAME with your API name from one of the following two sources:\r\n\r\n', x'', '2020-03-25 19:37:46', '2020-03-25 19:37:46')[0m
+  ↳ app/controllers/leads_controller.rb:25
+  [1m[35m (1.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/leads_controller.rb:25
+Completed 500 Internal Server Error in 1510ms (ActiveRecord: 24.2ms)
+
+
+  
+ActiveRecord::ValueTooLong (Mysql2::Error: Data too long for column 'message' at row 1: INSERT INTO `leads` (`full_name`, `company_name`, `email`, `phone`, `project_name`, `project_desc`, `department`, `message`, `attached_file`, `created_at`, `updated_at`) VALUES ('Sam', 'Garnet', 'James@tweet.co', '05147075543', 'Creamcake', 'Ice cream is a beautiful thing in winter but even more awesome in summer', 'Corporate', 'MacOS / Linux one-liner\r\nAn easy way to get a default git ignore without messing about with create/copy/paste is to use the curl command from the terminal. First cd into your projects root directory and then run the command by replacing MY_API_NAME with your API name from one of the following two sources:\r\n\r\n', x'', '2020-03-25 19:37:46', '2020-03-25 19:37:46')):
+  
+app/controllers/leads_controller.rb:25:in `create'
+Started POST "/leads" for ::1 at 2020-03-25 15:39:04 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gjqtwou01DMDQDsViOAnIdjn6UhMIiv4lceLZT0hTFHRedmrIp+SuPKju/ywK/lfJ4duz0HcDoPopIKvHaCI0w==", "lead"=>{"full_name"=>"Sam", "email"=>"James@tweet.co", "phone"=>"05147075543", "company_name"=>"Garnet", "project_name"=>"Creamcake", "department"=>"Corporate", "project_desc"=>"Ice cream is a beautiful thing in winter but even more awesome in summer", "message"=>"MacOS / Linux one-liner\r\nAn easy way to get a default git ignore \r\n", "attached_file"=>""}, "commit"=>"Submit"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/leads_controller.rb:25
+  [1m[36mLead Create (14.8ms)[0m  [1m[32mINSERT INTO `leads` (`full_name`, `company_name`, `email`, `phone`, `project_name`, `project_desc`, `department`, `message`, `attached_file`, `created_at`, `updated_at`) VALUES ('Sam', 'Garnet', 'James@tweet.co', '05147075543', 'Creamcake', 'Ice cream is a beautiful thing in winter but even more awesome in summer', 'Corporate', 'MacOS / Linux one-liner\r\nAn easy way to get a default git ignore \r\n', x'', '2020-03-25 19:39:06', '2020-03-25 19:39:06')[0m
+  ↳ app/controllers/leads_controller.rb:25
+  [1m[35m (6.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/leads_controller.rb:25
+Redirected to http://localhost:3000/index
+Completed 302 Found in 1428ms (ActiveRecord: 21.7ms)
+
+
+Started GET "/index" for ::1 at 2020-03-25 15:39:06 -0400
+Processing by LeadsController#new as HTML
+  Rendering leads/new.html.erb within layouts/application
+  Rendered leads/_index.html.erb (30.9ms)
+  Rendered leads/_index_end.html.erb (36.9ms)
+  Rendered leads/new.html.erb within layouts/application (74.5ms)
+Completed 200 OK in 283ms (Views: 279.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-25 16:54:34 -0400
+  [1m[35m (7.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by LeadsController#new as HTML
+  Rendering leads/new.html.erb within layouts/application
+Started GET "/" for ::1 at 2020-03-25 16:54:39 -0400
+  [1m[35m (2.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/ukemejah/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by LeadsController#new as HTML
+  Rendering leads/new.html.erb within layouts/application
+  Rendered leads/_index.html.erb (10492.7ms)
+  Rendered leads/_index.html.erb (15160.6ms)
+  Rendered leads/_index_end.html.erb (110.1ms)
+  Rendered leads/new.html.erb within layouts/application (10612.9ms)
+  Rendered leads/_index_end.html.erb (66.9ms)
+  Rendered leads/new.html.erb within layouts/application (15239.8ms)
+Completed 200 OK in 15871ms (Views: 15820.7ms | ActiveRecord: 26.5ms)
+
+
+Completed 200 OK in 11202ms (Views: 11199.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/leads" for ::1 at 2020-03-25 16:58:36 -0400
+Processing by LeadsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Rorhp2cTvIoLX18g7ftAtdA9OSbFlwVczv4JAbUUSHIVyZXOzjj6Afq838nVMJ7LL12+ochpICeznQDLlZWM8A==", "lead"=>{"full_name"=>"Tony", "email"=>"brown@red.blue", "phone"=>"6633882233", "company_name"=>"Tracky", "project_name"=>"Greena", "department"=>"Corporate", "project_desc"=>"Excursion", "message"=>"Disneyworld events industrialization", "attached_file"=>""}, "commit"=>"Submit"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/leads_controller.rb:25
+  [1m[36mLead Create (7.8ms)[0m  [1m[32mINSERT INTO `leads` (`full_name`, `company_name`, `email`, `phone`, `project_name`, `project_desc`, `department`, `message`, `attached_file`, `created_at`, `updated_at`) VALUES ('Tony', 'Tracky', 'brown@red.blue', '6633882233', 'Greena', 'Excursion', 'Corporate', 'Disneyworld events industrialization', x'', '2020-03-25 20:58:39', '2020-03-25 20:58:39')[0m
+  ↳ app/controllers/leads_controller.rb:25
+  [1m[35m (7.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/leads_controller.rb:25
+Redirected to http://localhost:3000/index
+Completed 302 Found in 2674ms (ActiveRecord: 15.7ms)
+
+
+Started GET "/index" for ::1 at 2020-03-25 16:58:39 -0400
+Processing by LeadsController#new as HTML
+  Rendering leads/new.html.erb within layouts/application
+  Rendered leads/_index.html.erb (24.2ms)
+  Rendered leads/_index_end.html.erb (29.8ms)
+  Rendered leads/new.html.erb within layouts/application (63.8ms)
+Completed 200 OK in 451ms (Views: 446.6ms | ActiveRecord: 0.0ms)
+
+
