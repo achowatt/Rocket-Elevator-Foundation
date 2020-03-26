@@ -1,5 +1,5 @@
 ActiveAdmin.register Elevator do
-    belongs_to :column
+    # belongs_to :column
     permit_params :serial_number, :model, :elevator_type, :status, :date_commision, :date_last_inspect, :certificate_inspect, :info, :notes, :column_id
 
     index do

@@ -1,5 +1,5 @@
 ActiveAdmin.register BuildingDetail do
-    belongs_to :building, polymorphic: true 
+    # belongs_to :building, polymorphic: true 
     permit_params :info_key, :value
 
     index do

@@ -1,5 +1,5 @@
 ActiveAdmin.register Column do
-    belongs_to :battery
+    # belongs_to :battery
     permit_params :column_type, :number_floors, :status, :info, :notes, :battery_id
 
     sidebar "Column Details", only: [:show, :edit] do

@@ -1,5 +1,6 @@
-# ROCKET ELEVATORS APIs
+# ROCKET ELEVATORS API
 
+Ruby On Rails project with Added APIs.  
 
 
 ## List of required Gems
