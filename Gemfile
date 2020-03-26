@@ -43,7 +43,7 @@ gem 'faker'
 gem 'date'
 gem 'whenever', require: false
 gem "chartkick"
-
+gem 'http'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

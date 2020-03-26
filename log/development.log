@@ -29673,3 +29673,237 @@ Processing by Admin::ElevatorsController#show as HTML
 Completed 200 OK in 288ms (Views: 256.0ms | ActiveRecord: 4.7ms)
 
 
+Started GET "/admin/elevators/1038" for ::1 at 2020-03-25 18:40:06 -0400
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by Admin::ElevatorsController#show as HTML
+  Parameters: {"id"=>"1038"}
+  [1m[36mEmployee Load (0.8ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mElevator Load (0.7ms)[0m  [1m[34mSELECT  `elevators`.* FROM `elevators` WHERE `elevators`.`id` = 1038 LIMIT 1[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/show.html.arb
+  [1m[36mColumn Load (0.6ms)[0m  [1m[34mSELECT  `columns`.* FROM `columns` WHERE `columns`.`id` = 306 LIMIT 1[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `active_admin_comments` WHERE `active_admin_comments`.`resource_type` = 'Elevator' AND `active_admin_comments`.`resource_id` = 1038 AND `active_admin_comments`.`namespace` = 'admin'[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveAdmin::Comment Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM `active_admin_comments` WHERE `active_admin_comments`.`resource_type` = 'Elevator' AND `active_admin_comments`.`resource_id` = 1038 AND `active_admin_comments`.`namespace` = 'admin' LIMIT 1 OFFSET 0[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendered /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/show.html.arb (20945.9ms)
+Completed 200 OK in 21078ms (Views: 20962.4ms | ActiveRecord: 10.9ms)
+
+
+Started GET "/admin" for ::1 at 2020-03-26 10:25:26 -0400
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Started GET "/admin" for ::1 at 2020-03-26 10:25:26 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by Admin::DashboardController#index as HTML
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mEmployee Load (0.6ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  [1m[36mEmployee Load (0.2ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/page/index.html.arb
+  Rendering /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/page/index.html.arb
+  Rendered /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/page/index.html.arb (7503.3ms)
+  Rendered /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/page/index.html.arb (7659.6ms)
+Completed 200 OK in 7779ms (Views: 7703.4ms | ActiveRecord: 3.3ms)
+
+
+Completed 200 OK in 7771ms (Views: 7667.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin/logout" for ::1 at 2020-03-26 10:25:40 -0400
+Processing by ActiveAdmin::Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jbFbyJc8Fkp2ZMGQR1/xU5l+QPmUuHOpC32EZfz9roK7D+eddYp/bRSwTEd1hDIgDzwzVT5jF74KpH98hHftlg=="}
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 26ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/admin" for ::1 at 2020-03-26 10:25:40 -0400
+Processing by Admin::DashboardController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admin/login" for ::1 at 2020-03-26 10:25:40 -0400
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/devise/shared/_links.erb (0.9ms)
+  Rendered /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (366.8ms)
+Completed 200 OK in 565ms (Views: 551.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for ::1 at 2020-03-26 10:25:52 -0400
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uhya72sWfj24isg/dReU1xIsrH6DCwWCks6CeBXP6tQw8NWmobqKW9/R+zDp9+OOnmxsx0TChohf4abq8405Dg==", "employee"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`email` = 'admin@example.com' ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 242ms (ActiveRecord: 0.4ms)
+
+
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uhya72sWfj24isg/dReU1xIsrH6DCwWCks6CeBXP6tQw8NWmobqKW9/R+zDp9+OOnmxsx0TChohf4abq8405Dg==", "employee"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  Rendering /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/devise/shared/_links.erb (2.3ms)
+  Rendered /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (57.6ms)
+Completed 200 OK in 287ms (Views: 159.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admin/login" for ::1 at 2020-03-26 10:25:57 -0400
+Processing by ActiveAdmin::Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jZsjgaVEG9f+HNzFmzj2fHTvTAIkaGrWDvlQbPN5vA8Hd2zIb+jvsZlH78oH2IEl+K+Mu+Oh6dzD1nT+FTtv1Q==", "employee"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mEmployee Load (1.2ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`email` = 'admin@example.com' ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/admin
+Completed 302 Found in 171ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/admin" for ::1 at 2020-03-26 10:25:57 -0400
+Processing by Admin::DashboardController#index as HTML
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/page/index.html.arb
+  Rendered /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/page/index.html.arb (120.1ms)
+Completed 200 OK in 125ms (Views: 122.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/elevators" for ::1 at 2020-03-26 11:23:14 -0400
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by Admin::ElevatorsController#index as HTML
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `elevators` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `elevators` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `elevators`[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `elevators` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mElevator Load (0.4ms)[0m  [1m[34mSELECT  `elevators`.* FROM `elevators` ORDER BY `elevators`.`id` desc LIMIT 30 OFFSET 0[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendered /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb (726.8ms)
+Completed 200 OK in 844ms (Views: 743.3ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/admin/elevators/1038/edit" for ::1 at 2020-03-26 11:24:19 -0400
+Processing by Admin::ElevatorsController#edit as HTML
+  Parameters: {"id"=>"1038"}
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mElevator Load (0.4ms)[0m  [1m[34mSELECT  `elevators`.* FROM `elevators` WHERE `elevators`.`id` = 1038 LIMIT 1[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/edit.html.arb
+  [1m[36mCACHE Elevator Load (0.0ms)[0m  [1m[34mSELECT  `elevators`.* FROM `elevators` WHERE `elevators`.`id` = 1038 LIMIT 1[0m  [["id", 1038], ["LIMIT", 1]]
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendered /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/edit.html.arb (496.9ms)
+Completed 200 OK in 528ms (Views: 521.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/buildings" for ::1 at 2020-03-26 11:58:14 -0400
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by Admin::BuildingsController#index as HTML
+  [1m[36mEmployee Load (0.6ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `buildings` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `buildings` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `buildings`[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `buildings` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mBuilding Load (0.7ms)[0m  [1m[34mSELECT  `buildings`.* FROM `buildings` ORDER BY `buildings`.`id` desc LIMIT 30 OFFSET 0[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendered /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb (10483.4ms)
+Completed 200 OK in 10695ms (Views: 10559.3ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/admin/elevators" for ::1 at 2020-03-26 11:58:28 -0400
+Processing by Admin::ElevatorsController#index as HTML
+  [1m[36mEmployee Load (0.4ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `elevators` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `elevators` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `elevators`[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT  1 AS one FROM `elevators` LIMIT 30 OFFSET 0) subquery_for_count[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mElevator Load (0.9ms)[0m  [1m[34mSELECT  `elevators`.* FROM `elevators` ORDER BY `elevators`.`id` desc LIMIT 30 OFFSET 0[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendered /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/index.html.arb (469.2ms)
+Completed 200 OK in 483ms (Views: 475.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/admin/elevators/1038/edit" for ::1 at 2020-03-26 11:58:32 -0400
+Processing by Admin::ElevatorsController#edit as HTML
+  Parameters: {"id"=>"1038"}
+  [1m[36mEmployee Load (1.1ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mElevator Load (0.6ms)[0m  [1m[34mSELECT  `elevators`.* FROM `elevators` WHERE `elevators`.`id` = 1038 LIMIT 1[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/edit.html.arb
+  [1m[36mCACHE Elevator Load (0.0ms)[0m  [1m[34mSELECT  `elevators`.* FROM `elevators` WHERE `elevators`.`id` = 1038 LIMIT 1[0m  [["id", 1038], ["LIMIT", 1]]
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendered /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/edit.html.arb (456.3ms)
+Completed 200 OK in 507ms (Views: 467.3ms | ActiveRecord: 1.7ms)
+
+
+Started PATCH "/admin/elevators/1038" for ::1 at 2020-03-26 11:58:59 -0400
+Processing by Admin::ElevatorsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eVgaIo72I0cCr5t2jIVWzVV6AIeGVNStzkZPg2D68JzZ/TVaGWaq+1t/kpL5DMtSnDfS9eMZ4HlWtCG4XRnS+Q==", "elevator"=>{"serial_number"=>"9402256683185", "model"=>"Premium", "elevator_type"=>"active", "status"=>"inactive", "date_commision(1i)"=>"2017", "date_commision(2i)"=>"7", "date_commision(3i)"=>"29", "date_last_inspect(1i)"=>"2017", "date_last_inspect(2i)"=>"7", "date_last_inspect(3i)"=>"29", "certificate_inspect"=>"446-21-8930", "info"=>"Architecto aeneus beneficium venustas adopto.", "notes"=>"Architecto aeneus beneficium venustas adopto.", "column_id"=>"306"}, "commit"=>"Update Elevator", "id"=>"1038"}
+  [1m[36mEmployee Load (0.5ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mElevator Load (0.8ms)[0m  [1m[34mSELECT  `elevators`.* FROM `elevators` WHERE `elevators`.`id` = 1038 LIMIT 1[0m
+  ↳ app/admin/elevators.rb:8
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/admin/elevators.rb:10
+  [1m[36mColumn Load (0.2ms)[0m  [1m[34mSELECT  `columns`.* FROM `columns` WHERE `columns`.`id` = 306 LIMIT 1[0m
+  ↳ app/admin/elevators.rb:10
+  [1m[36mElevator Update (0.6ms)[0m  [1m[33mUPDATE `elevators` SET `status` = 'inactive', `updated_at` = '2020-03-26 15:58:59' WHERE `elevators`.`id` = 1038[0m
+  ↳ app/admin/elevators.rb:10
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/admin/elevators.rb:10
+Redirected to http://localhost:3000/admin/elevators/1038
+Completed 302 Found in 470ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/admin/elevators/1038" for ::1 at 2020-03-26 11:59:00 -0400
+Processing by Admin::ElevatorsController#show as HTML
+  Parameters: {"id"=>"1038"}
+  [1m[36mEmployee Load (0.8ms)[0m  [1m[34mSELECT  `employees`.* FROM `employees` WHERE `employees`.`id` = 1 ORDER BY `employees`.`id` ASC LIMIT 1[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mElevator Load (0.8ms)[0m  [1m[34mSELECT  `elevators`.* FROM `elevators` WHERE `elevators`.`id` = 1038 LIMIT 1[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendering /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/show.html.arb
+  [1m[36mColumn Load (0.3ms)[0m  [1m[34mSELECT  `columns`.* FROM `columns` WHERE `columns`.`id` = 306 LIMIT 1[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `active_admin_comments` WHERE `active_admin_comments`.`resource_type` = 'Elevator' AND `active_admin_comments`.`resource_id` = 1038 AND `active_admin_comments`.`namespace` = 'admin'[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveAdmin::Comment Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `active_admin_comments` WHERE `active_admin_comments`.`resource_type` = 'Elevator' AND `active_admin_comments`.`resource_id` = 1038 AND `active_admin_comments`.`namespace` = 'admin' LIMIT 1 OFFSET 0[0m
+  ↳ /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendered /home/dhunter/.rvm/gems/ruby-2.6.5/gems/activeadmin-2.6.1/app/views/active_admin/resource/show.html.arb (350.8ms)
+Completed 200 OK in 388ms (Views: 376.4ms | ActiveRecord: 4.3ms)
+
+
