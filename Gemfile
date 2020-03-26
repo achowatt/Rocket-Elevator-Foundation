@@ -91,5 +91,15 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'test'
-gem 'zendesk_api'
+
+
 gem 'figaro'
+gem 'twilio-ruby'
+gem 'colorize'
+
+gem 'gmaps4rails'
+
+gem 'faraday'
+gem "mime-types", "~> 2.99", :platforms => [:ruby_19, :jruby]
+
+gemspec

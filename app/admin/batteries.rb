@@ -1,5 +1,5 @@
 ActiveAdmin.register Battery do
-    belongs_to :building, polymorphic: true 
+    # belongs_to :building, polymorphic: true 
     # belongs_to :employee, polymorphic: true 
     permit_params :battery_type, :status, :date_commision, :date_last_inspect, :certificate_operations, :info, :notes, :building_id, :employee_id
 

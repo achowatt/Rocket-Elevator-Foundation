@@ -5,8 +5,8 @@ ActiveAdmin.register User do
       selectable_column
       id_column
       column :email
-      column :current_sign_in_at
-      column :created_at
+      #column :current_sign_in_at
+      #column :created_at
       actions
     end
   
