@@ -1,4 +1,5 @@
 
+
 # Created by https://www.gitignore.io/api/rails
 # Edit at https://www.gitignore.io/?templates=rails
 
@@ -30,6 +31,10 @@ config/initializers/secret_token.rb
 config/master.key
 config/database.yml
 
+# Only include if you have production secrets in this file, which is no longer a Rails default
+# config/secrets.yml
+# dotenv
+
 # TODO Comment out this rule if environment variables can be committed
 .env
 ## Environment normalization:
@@ -57,6 +62,7 @@ node_modules/
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
 
 # Ignore uploaded files in development
 /storage/*
