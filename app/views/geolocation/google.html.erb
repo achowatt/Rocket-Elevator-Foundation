@@ -5,18 +5,20 @@
 </div>  
 
 <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=put_key_here&callback=initMap">
+        src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
 </script> 
-   
+
+        
+         
   <script src="https://rawgit.com/kswedberg/jquery-smooth-scroll/master/jquery.smooth-scroll.js"></script>
 
           
 <script>
           
      function initMap() {
-         center_psn = {lat: 45.459467, lng: -73.567267};
+         center_psn = {lat:  45.459467, lng: -71.254028};
          map = new google.maps.Map(document.getElementById('map'), {
-         zoom : 5,
+        zoom : 5,
          center: center_psn,
         })
        
@@ -26,6 +28,7 @@
             myLatLng = {lat: lat, lng: long}
             marker = new google.maps.Marker({
                     position: myLatLng,
+                    
                     map: map,
             })
 
@@ -35,13 +38,13 @@
             '<h1 id="firstHeading" class="firstHeading"> <%= lp[:name] %></h1>'+
             '<div id="bodyContent">'+
             '<p><b>Address: </b> <%= lp[:address] %></br>' +
-           
+         
             '</div>'+
             '</div>'
 
             marker.infowindow = new google.maps.InfoWindow({
             content: contentString
-            
+
             })
 
             previous = false

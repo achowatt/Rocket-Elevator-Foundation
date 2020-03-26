@@ -25,7 +25,7 @@ class GeolocationController < ApplicationController
     
              if @answer["status"] != "ZERO_RESULTS"
                  #extract lat long
-                @lat = @answer["results"] && @answer["results"][0] && @answer["results"][0]["geometry"] && @answer["results"][0]["geometry"]["location"] && @answer["results"][0]["geometry"]["location"]["lat"]
+                 @lat = @answer["results"] && @answer["results"][0] && @answer["results"][0]["geometry"] && @answer["results"][0]["geometry"]["location"] && @answer["results"][0]["geometry"]["location"]["lat"]
                 @lng = @answer["results"] && @answer["results"][0] && @answer["results"][0]["geometry"] && @answer["results"][0]["geometry"]["location"] && @answer["results"][0]["geometry"]["location"]["lng"]
     
                 @points_list << {name: building.admin_full_name, 
