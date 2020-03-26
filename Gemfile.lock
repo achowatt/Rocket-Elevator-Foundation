@@ -344,6 +344,7 @@ DEPENDENCIES
   date
   devise
   faker
+  faraday
   figaro
   font-awesome-rails
   font-awesome-sass (~> 5.12.0)
