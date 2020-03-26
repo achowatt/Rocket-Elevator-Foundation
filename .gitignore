@@ -58,3 +58,6 @@ yarn-debug.log*
 !/storage/.keep
 # End of https://www.gitignore.io/api/railssendgrid.env
 /vendor/cachesendgrid.env
+
+# Ignore application configuration
+/config/application.yml
