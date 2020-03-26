@@ -104,5 +104,7 @@ gem 'gmaps4rails'
 
 gem 'faraday'
 gem "mime-types", "~> 2.99", :platforms => [:ruby_19, :jruby]
+gem 'ed25519'
+gem 'bcrypt_pbkdf'
 
 gemspec
