@@ -6,6 +6,16 @@ class QuoteController < ApplicationController
     @quote = Quote.new #generate data blank to create new form
   end
 
+   #for creating a quote form submission ticket on zendesk panel
+   ZendeskAPI::Ticket.create!(@client, 
+    :subject => "#{@quote.Full_name} from #{@quote.Company_name}", 
+    :requester => {"name": @quote.Full_name},
+    :comment => { :value => 
+     "The contact #{@quote.Full_name} from company #{@quote.Company_name} has placed an order for an elevator installation in a #{@quote.Building_Type} building. 
+     The building has #{@quote.Nb_floor} floors. The client can be reached at email #{@quote.Email} and at phone number #{@quote.Phone_number}"},
+    :type => "question",  
+    :priority => "urgent")
+
   def create
     @quote = Quote.new(quote_params)
     #render json: @quote #test when submit button form

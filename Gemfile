@@ -95,8 +95,14 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'test'
 
+
 gem 'figaro'
 gem 'twilio-ruby'
 gem 'colorize'
 
 gem 'gmaps4rails'
+
+gem 'faraday'
+gem "mime-types", "~> 2.99", :platforms => [:ruby_19, :jruby]
+
+gemspec
