@@ -133,7 +133,9 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+
     ed25519 (1.2.4)
+
     erubi (1.9.0)
     execjs (2.7.0)
     faker (2.11.0)
@@ -156,7 +158,9 @@ GEM
     has_scope (0.7.2)
       actionpack (>= 4.1)
       activesupport (>= 4.1)
+
     hashie (3.6.0)
+
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
     inflection (1.0.0)
@@ -363,7 +367,9 @@ DEPENDENCIES
   colorize
   date
   devise
+
   ed25519
+
   faker
   faraday
   figaro
