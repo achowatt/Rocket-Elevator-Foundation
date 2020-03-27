@@ -1,33 +1,15 @@
 <h1 class="text-center" >Customers geolocalisation</h1>
-<<<<<<< HEAD
-​
-<div style='width: 800px;'>  
-  <div id="map" style='width: 1200px; height: 800px;'></div>  
-</div>  
-​
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxsA_4cxzmjR0Ucguj0LTFb1rdRgbjEYQ&callback=initMap">
-</script> 
-​
-        
-         
-  <script src="https://rawgit.com/kswedberg/jquery-smooth-scroll/master/jquery.smooth-scroll.js"></script>
-​
-=======
 
 <div style='width: 800px;'>  
   <div id="map" style='width: 1200px; height: 800px;'></div>  
 </div>  
 
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
-</script> 
+<script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_API_KEY'] %>&callback=initMap" async defer>
 
         
          
   <script src="https://rawgit.com/kswedberg/jquery-smooth-scroll/master/jquery.smooth-scroll.js"></script>
 
->>>>>>> b02564a877a45fad6b7ee4edeb5bf3fb6ba83e60
           
 <script>
           
@@ -47,11 +29,6 @@
                     
                     map: map,
             })
-<<<<<<< HEAD
-​
-=======
-
->>>>>>> b02564a877a45fad6b7ee4edeb5bf3fb6ba83e60
             contentString = '<div id="content">'+
             '<div id="siteNotice">'+
             '</div>'+
@@ -66,17 +43,6 @@
             '<b>Technician Name: </b> <%= lp[:technician] %></p>' +
             '</div>'+
             '</div>'
-<<<<<<< HEAD
-​
-            marker.infowindow = new google.maps.InfoWindow({
-            content: contentString
-​
-            })
-​
-            previous = false
-            marker.addListener('click', function() {
-​
-=======
 
             marker.infowindow = new google.maps.InfoWindow({
             content: contentString
@@ -86,18 +52,12 @@
             previous = false
             marker.addListener('click', function() {
 
->>>>>>> b02564a877a45fad6b7ee4edeb5bf3fb6ba83e60
                 if(previous) {
                     previous.close()
                 }
                 previous = this.infowindow;
                 this.infowindow.open(map, this);
             })
-<<<<<<< HEAD
-​
-=======
-
->>>>>>> b02564a877a45fad6b7ee4edeb5bf3fb6ba83e60
             
         <% end %>
        
