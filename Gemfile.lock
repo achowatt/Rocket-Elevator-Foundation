@@ -1,5 +1,6 @@
-PATH
-  remote: .
+GIT
+  remote: https://github.com/zendesk/zendesk_api_client_rb
+  revision: 29a244cf824750b18a70ec170b722399d4e7c2d5
   specs:
     zendesk_api (1.24.0)
       faraday (>= 0.9.0, < 2.0.0)

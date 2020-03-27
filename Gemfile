@@ -107,4 +107,4 @@ gem "mime-types", "~> 2.99", :platforms => [:ruby_19, :jruby]
 gem 'ed25519'
 gem 'bcrypt_pbkdf'
 
-gemspec
+gem "zendesk_api", git: 'https://github.com/zendesk/zendesk_api_client_rb'
