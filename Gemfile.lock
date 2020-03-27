@@ -10,7 +10,9 @@ GIT
       multipart-post (~> 2.0)
 
 
+
 GEM
+
 
   remote: https://rubygems.org/
   remote: http://rails-assets.org/
@@ -396,7 +398,6 @@ DEPENDENCIES
   date
   devise
   dropbox_api
-  ed25519
   faker
   faraday
   figaro
