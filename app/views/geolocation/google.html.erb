@@ -1,25 +1,105 @@
-<h1>Geolocalisation-Google</h1>
+<h1 class="text-center" >Customers geolocalisation</h1>
+<<<<<<< HEAD
+​
+<div style='width: 800px;'>  
+  <div id="map" style='width: 1200px; height: 800px;'></div>  
+</div>  
+​
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxsA_4cxzmjR0Ucguj0LTFb1rdRgbjEYQ&callback=initMap">
+</script> 
+​
+        
+         
+  <script src="https://rawgit.com/kswedberg/jquery-smooth-scroll/master/jquery.smooth-scroll.js"></script>
+​
+=======
 
-<div style='width: 100%;'>  
-  <div id="map" style='width: 1200px; height: 1200px;'></div>  
-</div>
- 
+<div style='width: 800px;'>  
+  <div id="map" style='width: 1200px; height: 800px;'></div>  
+</div>  
 
-<script type="text/javascript">  
-handler = Gmaps.build('Google');  
-handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){  
-  markers = handler.addMarkers([  
-    {  
-      "lat": 45.459467,  
-      "lng": -73.567267,  
-      "picture": {  
-        "width":  32,  
-        "height": 32  
-      },  
-      "infowindow": "SJSU"  
-    }  
-  ]);  
-  handler.bounds.extendWith(markers);  
-  handler.fitMapToBounds();  
-});  
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+</script> 
+
+        
+         
+  <script src="https://rawgit.com/kswedberg/jquery-smooth-scroll/master/jquery.smooth-scroll.js"></script>
+
+>>>>>>> b02564a877a45fad6b7ee4edeb5bf3fb6ba83e60
+          
+<script>
+          
+     function initMap() {
+         center_psn = {lat:  45.459467, lng: -71.254028};
+         map = new google.maps.Map(document.getElementById('map'), {
+        zoom : 5,
+         center: center_psn,
+        })
+       
+        <% @points_list.each_with_index do |lp| %>
+            lat = <%= lp[:lat] %>
+            long = <%= lp[:long] %>
+            myLatLng = {lat: lat, lng: long}
+            marker = new google.maps.Marker({
+                    position: myLatLng,
+                    
+                    map: map,
+            })
+<<<<<<< HEAD
+​
+=======
+
+>>>>>>> b02564a877a45fad6b7ee4edeb5bf3fb6ba83e60
+            contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading"> <%= lp[:name] %></h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Address: </b> <%= lp[:address] %></br>' +
+            '<b>Number of Floors: </b> <%= lp[:floors] %></br>' +
+            '<b>Client Name: </b> <%= lp[:client] %></br>' +
+            '<b>Number of Batteries: </b> <%= lp[:battery] %></br>' +
+            '<b>Number of Columns:</b> <%= lp[:column] %></br>' +
+            '<b>Number of Elevators:</b> <%= lp[:elevator] %></br>' +
+            '<b>Technician Name: </b> <%= lp[:technician] %></p>' +
+            '</div>'+
+            '</div>'
+<<<<<<< HEAD
+​
+            marker.infowindow = new google.maps.InfoWindow({
+            content: contentString
+​
+            })
+​
+            previous = false
+            marker.addListener('click', function() {
+​
+=======
+
+            marker.infowindow = new google.maps.InfoWindow({
+            content: contentString
+
+            })
+
+            previous = false
+            marker.addListener('click', function() {
+
+>>>>>>> b02564a877a45fad6b7ee4edeb5bf3fb6ba83e60
+                if(previous) {
+                    previous.close()
+                }
+                previous = this.infowindow;
+                this.infowindow.open(map, this);
+            })
+<<<<<<< HEAD
+​
+=======
+
+>>>>>>> b02564a877a45fad6b7ee4edeb5bf3fb6ba83e60
+            
+        <% end %>
+       
+       }
 </script>
