@@ -102,14 +102,11 @@ gem 'twilio-ruby'
 gem 'colorize'
 
 gem 'gmaps4rails'
-<<<<<<< HEAD
+
 gem "faraday"
-=======
+
 
 gem 'faraday'
 gem "mime-types", "~> 2.99", :platforms => [:ruby_19, :jruby]
 gem 'ed25519'
 gem 'bcrypt_pbkdf'
-
-gemspec
->>>>>>> master
