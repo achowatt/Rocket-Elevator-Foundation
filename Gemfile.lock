@@ -147,11 +147,17 @@ GEM
       responders
       warden (~> 1.2.3)
 <<<<<<< HEAD
+<<<<<<< HEAD
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
 =======
     ed25519 (1.2.4)
 >>>>>>> master
+=======
+
+    ed25519 (1.2.4)
+
+>>>>>>> b02564a877a45fad6b7ee4edeb5bf3fb6ba83e60
     erubi (1.9.0)
     eventmachine (1.2.7)
     execjs (2.7.0)
@@ -178,7 +184,9 @@ GEM
     has_scope (0.7.2)
       actionpack (>= 4.1)
       activesupport (>= 4.1)
+
     hashie (3.6.0)
+<<<<<<< HEAD
     http (4.1.1)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
@@ -188,6 +196,9 @@ GEM
       domain_name (~> 0.5)
     http-form_data (2.3.0)
     http_parser.rb (0.6.0)
+=======
+
+>>>>>>> b02564a877a45fad6b7ee4edeb5bf3fb6ba83e60
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
     ibm_cloud_sdk_core (1.1.1)
@@ -401,7 +412,9 @@ DEPENDENCIES
   colorize
   date
   devise
+
   ed25519
+
   faker
   faraday
   figaro
