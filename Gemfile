@@ -46,7 +46,8 @@ gem 'faker'
 gem 'date'
 gem 'whenever', require: false
 gem "chartkick"
-
+gem 'http'
+gem 'dropbox_api'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -108,6 +109,8 @@ gem 'colorize'
 gem 'gmaps4rails'
 gem 'faraday'
 gem "mime-types", "~> 2.99", :platforms => [:ruby_19, :jruby]
+gem 'ed25519'
+gem 'bcrypt_pbkdf'
 
 gemspec
 
