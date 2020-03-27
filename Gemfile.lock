@@ -8,11 +8,7 @@ GIT
       inflection
       mime-types
       multipart-post (~> 2.0)
-<<<<<<< HEAD
 
-=======
->>>>>>> 15203c8552927fea28d0d596672c753008bf74f9
-GEM
   remote: https://rubygems.org/
   remote: http://rails-assets.org/
   specs:
