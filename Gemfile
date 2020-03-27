@@ -111,7 +111,7 @@ gem 'colorize'
 gem 'gmaps4rails'
 
 
-gem "faraday"
+
 
 
 

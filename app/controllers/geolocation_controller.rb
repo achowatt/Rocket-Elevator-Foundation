@@ -38,10 +38,5 @@ class GeolocationController < ApplicationController
         end
         
   end
-<<<<<<< HEAD
-​
-end
-=======
 
 end
->>>>>>> b02564a877a45fad6b7ee4edeb5bf3fb6ba83e60
