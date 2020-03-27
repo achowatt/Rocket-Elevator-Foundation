@@ -107,23 +107,14 @@ gem 'colorize'
 
 # ?? For googlemaps ??
 gem 'gmaps4rails'
-<<<<<<< HEAD
-=======
+
 
 gem "faraday"
+gem 'zendesk_api'
 
 
->>>>>>> b02564a877a45fad6b7ee4edeb5bf3fb6ba83e60
 gem 'faraday'
 gem "mime-types", "~> 2.99", :platforms => [:ruby_19, :jruby]
 gem 'ed25519'
 gem 'bcrypt_pbkdf'
-<<<<<<< HEAD
 
-gemspec
-
-
-# Ruby gem to quickly get started with the various IBM Watson services.
-gem "ibm_watson", git: 'https://github.com/watson-developer-cloud/ruby-sdk', branch: 'master'
-=======
->>>>>>> b02564a877a45fad6b7ee4edeb5bf3fb6ba83e60
