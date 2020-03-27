@@ -1,12 +1,7 @@
-
-
 # Created by https://www.gitignore.io/api/rails
 # Edit at https://www.gitignore.io/?templates=rails
-
-
 .bash*
 .mysql_history 
-
 ### Rails ###
 *.rbc
 capybara-*.html
@@ -19,23 +14,18 @@ capybara-*.html
 *.orig
 rerun.txt
 pickle-email-*.html
-
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
 !/log/.keep
 !/tmp/.keep
-tmp/cache
-vendor/cache
 # TODO Comment out this rule if you are OK with secrets being uploaded to the repo
 config/initializers/secret_token.rb
 config/master.key
 config/database.yml
-
 # Only include if you have production secrets in this file, which is no longer a Rails default
 # config/secrets.yml
 # dotenv
-
 # TODO Comment out this rule if environment variables can be committed
 .env
 ## Environment normalization:
@@ -63,16 +53,22 @@ node_modules/
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
-
-
 # Ignore uploaded files in development
 /storage/*
 !/storage/.keep
-
-# End of https://www.gitignore.io/api/rails
+# End of https://www.gitignore.io/api/railssendgrid.env
+/vendor/cachesendgrid.env
 
 # Ignore application configuration
+<<<<<<< HEAD
+/config/application.yml
+
+# Ignore Watson
+
+ibm-credentials.env
+=======
 config/application.yml
 
 # Ignore application configuration
 /config/application.yml
+>>>>>>> master
