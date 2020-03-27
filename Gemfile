@@ -5,6 +5,8 @@ ruby '2.6.5'
 gem 'sendgrid-ruby'
 gem 'figaro'
 gem 'json', '~> 1.8', '>= 1.8.3'
+gem 'colorize'
+gem 'dropbox_api'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.1'
