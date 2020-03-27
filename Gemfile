@@ -46,7 +46,8 @@ gem 'faker'
 gem 'date'
 gem 'whenever', require: false
 gem "chartkick"
-
+gem 'http'
+gem 'dropbox_api'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
