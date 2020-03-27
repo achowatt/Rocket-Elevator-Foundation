@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.5'
+gem 'sendgrid-ruby'
+gem 'figaro'
+gem 'json', '~> 1.8', '>= 1.8.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.1'
@@ -43,7 +46,8 @@ gem 'faker'
 gem 'date'
 gem 'whenever', require: false
 gem "chartkick"
-
+gem 'http'
+gem 'dropbox_api'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -92,9 +96,20 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'test'
 
+
 gem 'figaro'
 gem 'twilio-ruby'
 gem 'colorize'
 
 gem 'gmaps4rails'
+<<<<<<< HEAD
 gem "faraday"
+=======
+
+gem 'faraday'
+gem "mime-types", "~> 2.99", :platforms => [:ruby_19, :jruby]
+gem 'ed25519'
+gem 'bcrypt_pbkdf'
+
+gemspec
+>>>>>>> master

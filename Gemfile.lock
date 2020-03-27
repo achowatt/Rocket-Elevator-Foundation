@@ -1,3 +1,13 @@
+PATH
+  remote: .
+  specs:
+    zendesk_api (1.24.0)
+      faraday (>= 0.9.0, < 2.0.0)
+      hashie (>= 3.5.2, < 4.0.0)
+      inflection
+      mime-types
+      multipart-post (~> 2.0)
+
 GEM
   remote: https://rubygems.org/
   remote: http://rails-assets.org/
@@ -66,6 +76,7 @@ GEM
     autoprefixer-rails (9.7.5)
       execjs
     bcrypt (3.1.13)
+    bcrypt_pbkdf (1.0.1)
     bindex (0.8.1)
     bootsnap (1.4.6)
       msgpack (~> 1.0)
@@ -122,6 +133,7 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    ed25519 (1.2.4)
     erubi (1.9.0)
     execjs (2.7.0)
     faker (2.11.0)
@@ -144,8 +156,10 @@ GEM
     has_scope (0.7.2)
       actionpack (>= 4.1)
       activesupport (>= 4.1)
+    hashie (3.6.0)
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
+    inflection (1.0.0)
     inherited_resources (1.11.0)
       actionpack (>= 5.0, < 6.1)
       has_scope (~> 0.6)
@@ -158,6 +172,7 @@ GEM
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
+    json (1.8.6)
     jwt (2.2.1)
     kaminari (1.2.0)
       activesupport (>= 4.1.0)
@@ -183,6 +198,7 @@ GEM
     marcel (0.3.3)
       mimemagic (~> 0.3.2)
     method_source (1.0.0)
+    mime-types (2.99.3)
     mimemagic (0.3.4)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
@@ -251,6 +267,7 @@ GEM
       actionpack (>= 5.0)
       railties (>= 5.0)
     ruby_dep (1.5.0)
+    ruby_http_client (3.5.0)
     rubytest (0.8.1)
     rubyzip (2.3.0)
     rvm1-capistrano3 (1.4.0)
@@ -278,6 +295,8 @@ GEM
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
+    sendgrid-ruby (6.1.2)
+      ruby_http_client (~> 3.4)
     spring (2.1.0)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -328,6 +347,7 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin
+  bcrypt_pbkdf
   bootsnap (>= 1.1.0)
   bootstrap (~> 4.4.1)
   byebug
@@ -343,6 +363,7 @@ DEPENDENCIES
   colorize
   date
   devise
+  ed25519
   faker
   faraday
   figaro
@@ -351,7 +372,9 @@ DEPENDENCIES
   gmaps4rails
   jbuilder (~> 2.5)
   jquery-rails
+  json (~> 1.8, >= 1.8.3)
   listen (>= 3.0.5, < 3.2)
+  mime-types (~> 2.99)
   mixitup-rails
   mysql2 (>= 0.4.4, < 0.6.0)
   owlcarousel-rails (~> 1.1, >= 1.1.3.3)
@@ -363,6 +386,7 @@ DEPENDENCIES
   rvm1-capistrano3
   sass-rails (~> 5.0)
   selenium-webdriver
+  sendgrid-ruby
   spring
   spring-watcher-listen (~> 2.0.0)
   test
@@ -372,9 +396,10 @@ DEPENDENCIES
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
   whenever
+  zendesk_api!
 
 RUBY VERSION
    ruby 2.6.5p114
 
 BUNDLED WITH
-   1.17.3
+   2.1.4
