@@ -60,15 +60,9 @@ yarn-debug.log*
 /vendor/cachesendgrid.env
 
 # Ignore application configuration
-<<<<<<< HEAD
 /config/application.yml
 
 # Ignore Watson
 
 ibm-credentials.env
-=======
-config/application.yml
-
-# Ignore application configuration
-/config/application.yml
->>>>>>> master
+/vendor/cache/*
