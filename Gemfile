@@ -110,7 +110,7 @@ gem 'gmaps4rails'
 
 
 gem "faraday"
-gem 'zendesk_api'
+
 
 
 gem 'faraday'
