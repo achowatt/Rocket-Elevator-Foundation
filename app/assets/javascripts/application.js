@@ -29,3 +29,6 @@
 
 //= require chartkick
 //= require Chart.bundle
+
+
+//= require gmaps/google
