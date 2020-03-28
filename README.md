@@ -49,8 +49,9 @@ Watson: (Jorge Chavarriaga / Ukeme Ekpenyog / David Hunter)
 1. In the admin panel in the dashboard you can see all the information requerid for watson (text to speech)
 ...
 
-Google maps:
-- To test Google Maps API: go admin panel in http://www.kembasy.com/admin/dashboard  thenclick on the button customers geolocation. 
+
+Google Maps API:
+- To test Google Maps API: go admin panel in http://www.kembasy.com/admin/dashboard  then click on the button customers geolocation. 
 - This youtube video shows the test localy: https://youtu.be/vZZW9lDEZIk. 
 
 Guys complete your api test here!
