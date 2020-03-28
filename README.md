@@ -30,13 +30,20 @@ Testing Api's:
 
 
 Twilio: (Jorge Chavarriaga)
-1. Go to Elevators 
-2. Edit an elevator
+1. Go to the Elevators tab
+2. Choose an elevator to edit 
 3. Change the status to intervention
 4. Update Elevator
-5. You gonna see in the browser the message: "Elevator was successfully updated."
-6. If you go to you console you will see a message with all the information that was sent to the technician registered in the database.
+5. You will see the following message in your browser: "Elevator was successfully updated."
+6. If you go to your console, you will see a message with all the information that was sent to the technician registered in the database.
 7. An SMS is immediately sent to the phone number of the technician registered in the database (in this case all buildings have Patrick Thibault's cell number).
+
+Slack: (David Hunter)
+1. Go to the Elevators tab
+2. Choose an elevator to edit 
+3. Change the status to active or inactive
+4. Update Elevator
+5. You will see the following message template sent in the slack channel: "Elevator 1002 with Serial Number 9305206536082 status has been changed from active to inactive"
 
 Watson: (Jorge Chavarriaga / Ukeme Ekpenyog / David Hunter)
 1. In the admin panel in the dashboard you can see all the information requerid for watson (text to speech)
