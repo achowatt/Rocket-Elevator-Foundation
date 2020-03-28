@@ -7,4 +7,6 @@ default: &default
   port: 3306
 development:
   <<: *default
-  database: JackieLai
+  database: JorgeCh
+
+  
