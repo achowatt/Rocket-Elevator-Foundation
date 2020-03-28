@@ -61,6 +61,17 @@ username: rocketelevator.zendesk.com
 pwd: rocketelevators
 zendesk email: kembasy@yahoo.com
 
+SendGrid API:
+Simply go to the home page (index), scroll down to the bottom and fill out the "Contact Form".
+Make sure to type in the correct e-mai and all the required fields, and press submit.
+Once you have submitted, you should recieve a welcome email from Rocket Elevators.
+
+DropBox API:
+1) Go admin panel in http://www.kembasy.com/admin/dashboard
+2) Go to Customers panel - create a new customer
+3) If the new customer's information (especially e-mai), matches the lead's information, DropBox will automatically create 
+a file for that specific customer and the attachment file from the lead's database will be stored on their DropBox file instead. The DropBox file will be the customer's name.
+
 Guys complete your api test here!
 
 
