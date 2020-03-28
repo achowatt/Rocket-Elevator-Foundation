@@ -50,7 +50,7 @@ Watson: (Jorge Chavarriaga / Ukeme Ekpenyog / David Hunter)
 ...
 
 Google maps:
-To test Google Maps API: go admin panel in http://www.kembasy.com/admin/dashboard  thenclick on the button customers geolocation,
+To test Google Maps API: go admin panel in http://www.kembasy.com/admin/dashboard  thenclick on the button customers geolocation. this youtube video showint the test localy: https://youtu.be/vZZW9lDEZIk
 
 Guys complete your api test here!
 
