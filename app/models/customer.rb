@@ -1,5 +1,6 @@
 class Customer < ApplicationRecord
     belongs_to :address
+<<<<<<< HEAD
     #belongs_to :user, optional: true
     has_many :buildings
     #after_create :upload_lead_files #<---comment this code before seed, uncomment to get dropbox to work
@@ -27,3 +28,8 @@ class Customer < ApplicationRecord
         end
     end
 end
+=======
+    # belongs_to :users
+    has_many :buildings
+end
+>>>>>>> 44b995c2feacddc45d2fc99c2790978c653ecb34

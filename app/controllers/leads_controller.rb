@@ -12,7 +12,10 @@ class LeadsController < ApplicationController
 
   def create  
     @lead = Lead.new(lead_params)
+<<<<<<< HEAD
     #@lead.attached_file = lead_params['attached_file'].read
+=======
+>>>>>>> 44b995c2feacddc45d2fc99c2790978c653ecb34
 
 
     #Create ticket on Zendesk from Contact Form
