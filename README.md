@@ -54,6 +54,13 @@ Google Maps API:
 - To test Google Maps API: go admin panel in http://www.kembasy.com/admin/dashboard  then click on the button customers geolocation in the dashboard. 
 - This youtube video shows the test localy: https://youtu.be/vZZW9lDEZIk. 
 
+Zendesk api 
+for testing (to view received tickets on zendesk dashboard)
+url: www.zendesk.com
+username: rocketelevator.zendesk.com
+pwd: rocketelevators
+zendesk email: kembasy@yahoo.com
+
 Guys complete your api test here!
 
 
