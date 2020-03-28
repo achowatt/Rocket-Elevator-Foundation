@@ -147,7 +147,7 @@ ActiveRecord::Schema.define(version: 2020_03_12_171141) do
 
   create_table "quotes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "Full_Name"
-    t.integer "Phone_Number"
+    t.string "Phone_Number"
     t.string "Company_Name"
     t.string "Email"
     t.string "Building_Type"

@@ -11,7 +11,22 @@ class QuoteController < ApplicationController
     #render json: @quote #test when submit button form
     if @quote.save
       message = "Hi #{@quote.Full_Name}, your quote has been submitted successfully! One of our representatives will be contacting you shortly."
-      TwilioTextMessenger.new(message).call
+      totest = "#{@quote.Phone_Number}"
+      puts ""
+      puts ""
+      puts "**************************************************  SUBMITTED SUCCESSFULLY !!! ************************************************** ".red 
+      puts "**************************************************  SUBMITTED SUCCESSFULLY !!! **************************************************".red
+      puts ""
+      puts ""
+      puts "***** message: #{message} ***** ".green
+      puts "***** to: #{@quote.Phone_Number} ***** ".green
+      puts ""
+      puts ""
+      puts "**************************************************  SUBMITTED SUCCESSFULLY !!! ************************************************** ".red 
+      puts "**************************************************  SUBMITTED SUCCESSFULLY !!! **************************************************".red
+      puts ""
+      puts ""
+      TwilioTextMessenger.new(message, totest).call
       flash[:notice] = "add new quete successfull "
       redirect_to :index
     else

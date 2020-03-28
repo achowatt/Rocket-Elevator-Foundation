@@ -7,6 +7,6 @@ default: &default
   port: 3306
 development:
   <<: *default
-  database: JorgeCh
+  database: Saturday
 
   
