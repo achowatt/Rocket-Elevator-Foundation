@@ -12,11 +12,7 @@ class LeadsController < ApplicationController
 
   def create  
     @lead = Lead.new(lead_params)
-<<<<<<< HEAD
-    #@lead.attached_file = lead_params['attached_file'].read
-=======
->>>>>>> 44b995c2feacddc45d2fc99c2790978c653ecb34
-
+    @lead.attached_file = lead_params['attached_file'].read
 
     #Create ticket on Zendesk from Contact Form
     ZendeskAPI::Ticket.create!(@client, 
@@ -31,35 +27,34 @@ class LeadsController < ApplicationController
       :priority => "urgent")
     
 
-
     #render json: @lead #test when submit button form
     if @lead.save
       flash[:notice] = "We received your request!"
       redirect_to :index
     
     #code for sending email after someone else fills out the contact form --this is a comment
-      # data = JSON.parse(%Q[{
-      #   "personalizations": [
-      #     {
-      #       "to": [
-      #         {
-      #           "email": "#{@lead.email}"
-      #         }
-      #       ],
-      #       "dynamic_template_data":{
-      #         "full_name":"#{@lead.full_name}",
-      #         "project_name":"#{@lead.project_name}"
-      #       },
-      #       "subject": "Greetings from Team Rocket!"
-      #     }
-      #   ],
-      #   "from": {
-      #     "email": "test@example.com"
-      #   },
-      #   "template_id":"d-880ee0610e084a45896e8ad45336829e"
-      # }])
-      # sg = SendGrid::API.new(api_key: ENV["SENDGRID_API"])
-      # response = sg.client.mail._("send").post(request_body: data)
+       data = JSON.parse(%Q[{
+         "personalizations": [
+           {
+             "to": [
+               {
+                 "email": "#{@lead.email}"
+               }
+             ],
+             "dynamic_template_data":{
+               "full_name":"#{@lead.full_name}",
+               "project_name":"#{@lead.project_name}"
+             },
+             "subject": "Greetings from Team Rocket!"
+           }
+         ],
+         "from": {
+           "email": "test@example.com"
+         },
+         "template_id":"d-880ee0610e084a45896e8ad45336829e"
+       }])
+       sg = SendGrid::API.new(api_key: ENV["SENDGRID_API"])
+       response = sg.client.mail._("send").post(request_body: data)
       
     else
       flash[:notice] = "Request not succesfull."
