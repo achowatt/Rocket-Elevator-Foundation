@@ -62,9 +62,9 @@ pwd: rocketelevators
 zendesk email: kembasy@yahoo.com
 
 SendGrid API:
-Simply go to the home page (index), scroll down to the bottom and fill out the "Contact Form".
-Make sure to type in the correct e-mai and all the required fields, and press submit.
-Once you have submitted, you should recieve a welcome email from Rocket Elevators.
+1) Simply go to the home page (index), scroll down to the bottom and fill out the "Contact Form".
+2) Make sure to type in the correct e-mai and all the required fields, and press submit.
+3) Once you have submitted, you should recieve a welcome email from Rocket Elevators.
 
 DropBox API:
 1) Go admin panel in http://www.kembasy.com/admin/dashboard
