@@ -12,9 +12,7 @@ class LeadsController < ApplicationController
 
   def create  
     @lead = Lead.new(lead_params)
-<<<<<<< HEAD
     #@lead.attached_file = lead_params['attached_file'].read
-=======
 
 
     #Create ticket on Zendesk from Contact Form
@@ -31,7 +29,6 @@ class LeadsController < ApplicationController
     
 
 
->>>>>>> master
     #render json: @lead #test when submit button form
     if @lead.save
       flash[:notice] = "We received your request!"
