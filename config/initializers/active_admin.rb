@@ -250,7 +250,7 @@ ActiveAdmin.setup do |config|
     #
     config.namespace :admin do |admin|
       admin.build_menu :default do |menu|
-        menu.add label: "Customers geolocalisation", url: "http://localhost:3000/geolocation/google", html_options: { target: :blank }
+        menu.add label: "Customers geolocalisation", url: "/geolocation/google", html_options: { target: :blank }
       end
     end
 
