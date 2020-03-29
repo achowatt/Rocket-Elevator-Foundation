@@ -55,6 +55,8 @@ Testing Api's:
 4. Google Maps API: (Younes Bekkali)
 - To test Google Maps API: go admin panel in http://www.kembasy.com/admin/dashboard  then click on the button customers geolocation in the dashboard. 
 - This youtube video shows the test localy: https://youtu.be/vZZW9lDEZIk. 
+  change line 244 the config/initializers/active_admin.rb. to : 
+    menu.add label: "Customers geolocalisation", url: "http://localhost:3000/geolocation/google", html_options: { target: :blank }
 
 5. Zendesk api  (Ukeme Ekpenyong)
 For testing (to view received tickets on zendesk dashboard). 
