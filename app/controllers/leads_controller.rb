@@ -12,7 +12,8 @@ class LeadsController < ApplicationController
 
   def create  
     @lead = Lead.new(lead_params)
-    @lead.attached_file = lead_params['attached_file'].read
+    @lead.attached_file = lead_params['attached_file']
+    #@lead.attached_file = lead_params['attached_file'].read
 
     #Create ticket on Zendesk from Contact Form
     ZendeskAPI::Ticket.create!(@client, 
