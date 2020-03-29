@@ -4,7 +4,7 @@ class CreateQuotes < ActiveRecord::Migration[5.2]
     create_table :quotes do |t|
 
       t.string :Full_Name
-      t.integer :Phone_Number
+      t.string :Phone_Number
       t.string :Company_Name
       t.string :Email
 

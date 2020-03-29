@@ -85,7 +85,7 @@ ActiveRecord::Schema.define(version: 2020_03_12_171141) do
   end
 
   create_table "customers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.timestamp "customer_create_date", null: false
+    t.timestamp "customer_create_date", default: -> { "CURRENT_TIMESTAMP" }, null: false
     t.string "company_name", null: false
     t.string "name_company_contact", null: false
     t.string "company_phone"
@@ -147,7 +147,7 @@ ActiveRecord::Schema.define(version: 2020_03_12_171141) do
 
   create_table "quotes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "Full_Name"
-    t.integer "Phone_Number"
+    t.string "Phone_Number"
     t.string "Company_Name"
     t.string "Email"
     t.string "Building_Type"
