@@ -29,7 +29,8 @@ Testing Api's:
 4. Now you are in the admin panel, you are aviable to see the dashboard, and you can access to the options on the top.
 
 
-Twilio: (Jorge Chavarriaga)
+1. Twilio: (Jorge Chavarriaga)
+
 1. Go to the Elevators tab
 2. Choose an elevator to edit 
 3. Change the status to intervention
@@ -38,41 +39,33 @@ Twilio: (Jorge Chavarriaga)
 6. If you go to your console, you will see a message with all the information that was sent to the technician registered in the database.
 7. An SMS is immediately sent to the phone number of the technician registered in the database (in this case all buildings have Patrick Thibault's cell number).
 
-Slack: (David Hunter)
+2.Slack: (David Hunter)
+
 1. Go to the Elevators tab
 2. Choose an elevator to edit 
 3. Change the status to active or inactive
 4. Update Elevator
 5. You will see the following message template sent in the slack channel: "Elevator 1002 with Serial Number 9305206536082 status has been changed from active to inactive"
 
-Watson: (Jorge Chavarriaga / Ukeme Ekpenyog / David Hunter)
+3. Watson: (Jorge Chavarriaga / Ukeme Ekpenyong / David Hunter)
 1. In the admin panel in the dashboard you can see all the information requerid for watson (text to speech)
 ...
 
 
-Google Maps API:
+4. Google Maps API: (Younes Bekkali)
 - To test Google Maps API: go admin panel in http://www.kembasy.com/admin/dashboard  then click on the button customers geolocation in the dashboard. 
 - This youtube video shows the test localy: https://youtu.be/vZZW9lDEZIk. 
 
-Zendesk api 
-for testing (to view received tickets on zendesk dashboard)
-url: www.zendesk.com
-username: rocketelevator.zendesk.com
-pwd: rocketelevators
-zendesk email: kembasy@yahoo.com
+5. Zendesk api  (Ukeme Ekpenyong)
+For testing (to view received tickets on zendesk dashboard). 
 
-SendGrid API:
+6. SendGrid API: (Anna Chowattanakul)
 1) Simply go to the home page (index), scroll down to the bottom and fill out the "Contact Form".
 2) Make sure to type in the correct e-mai and all the required fields, and press submit.
 3) Once you have submitted, you should recieve a welcome email from Rocket Elevators.
 
-DropBox API:
+7. DropBox API:(Anna Chowattanakul)
 1) Go admin panel in http://www.kembasy.com/admin/dashboard
 2) Go to Customers panel - create a new customer
 3) If the new customer's information (especially e-mai), matches the lead's information, DropBox will automatically create 
 a file for that specific customer and the attachment file from the lead's database will be stored on their DropBox file instead. The DropBox file will be the customer's name.
-
-Guys complete your api test here!
-
-
-
