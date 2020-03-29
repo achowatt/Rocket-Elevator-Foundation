@@ -1,4 +1,6 @@
 ActiveAdmin.setup do |config|
+
+  
   # == Site Title
   #
   # Set the title that is displayed on the main layout
@@ -244,6 +246,13 @@ ActiveAdmin.setup do |config|
   #       menu.add label: "My Great Website", url: "http://www.mygreatwebsite.com", html_options: { target: :blank }
   #     end
   #   end
+
+    #
+    config.namespace :admin do |admin|
+      admin.build_menu :default do |menu|
+        menu.add label: "Customers geolocalisation", url: "http://localhost:3000/geolocation/google", html_options: { target: :blank }
+      end
+    end
 
   # == Download Links
   #
