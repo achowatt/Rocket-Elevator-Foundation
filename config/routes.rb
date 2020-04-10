@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
   
+  resources :interventions do
+    collection do
+      get :get_buildings_for_customer
+      get :get_batteries_for_building
+      get :get_columns_for_battery
+      get :get_elevators_for_column
+    end
+  end
+
   devise_for :users
   devise_for :employees, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
@@ -14,6 +23,7 @@ Rails.application.routes.draw do
   get 'corporate' => 'pages#corporate' # corporate
   get 'residential' => 'pages#residential' # residential
   get 'quoteform' => 'quote#new' # quote form
+  get 'intervention' => 'intervention#new' #intervention request form
   get 'login' => 'pages#login'
   get 'sign_up' => 'users#sign_up'
   get 'sign_in' => 'users#sign_in'

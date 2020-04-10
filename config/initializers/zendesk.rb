@@ -4,7 +4,7 @@ def initialize
 @client = ZendeskAPI::Client.new do |config|
   # Mandatory:
 
-  config.url = "https://rocketelevator.zendesk.com/api/v2" # e.g. https://mydesk.zendesk.com/api/v2
+  config.url = "https://bananacompany.zendesk.com/api/v2" # e.g. https://mydesk.zendesk.com/api/v2
 
   # Basic / Token Authentication
   config.username = ENV["ZENDESK_API_USERNAME"]

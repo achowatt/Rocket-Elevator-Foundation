@@ -11,7 +11,20 @@
  * It is generally better to create a new file per style scope.
  *
  */
- // Custom bootstrap variables must be set or imported *before* bootstrap.
+// Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
 @import "font-awesome";
 @import "font-awesome-sprockets";
+
+.new_user {
+    padding: 20px;
+    margin: 0;
+    background-image: image-url("AdobeStock_122227340.jpeg");
+    background-size: cover;
+}
+
+.container-fluid {
+    .row {
+        padding: 20px;
+    }
+}

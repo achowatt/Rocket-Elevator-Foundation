@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_12_171141) do
+ActiveRecord::Schema.define(version: 2020_04_09_130507) do
 
   create_table "active_admin_comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "namespace"
@@ -85,7 +85,7 @@ ActiveRecord::Schema.define(version: 2020_03_12_171141) do
   end
 
   create_table "customers", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.timestamp "customer_create_date", default: -> { "CURRENT_TIMESTAMP" }, null: false
+    t.timestamp "customer_create_date", null: false
     t.string "company_name", null: false
     t.string "name_company_contact", null: false
     t.string "company_phone"
@@ -129,6 +129,23 @@ ActiveRecord::Schema.define(version: 2020_03_12_171141) do
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_employees_on_email", unique: true
     t.index ["reset_password_token"], name: "index_employees_on_reset_password_token", unique: true
+  end
+
+  create_table "interventions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "author"
+    t.integer "customer_id"
+    t.integer "building_id"
+    t.integer "battery_id"
+    t.integer "column_id"
+    t.integer "elevator_id"
+    t.integer "employee_id"
+    t.timestamp "start_date"
+    t.timestamp "end_date"
+    t.string "result", default: "incomplete"
+    t.string "report"
+    t.string "status", default: "pending"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "leads", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -178,6 +195,7 @@ ActiveRecord::Schema.define(version: 2020_03_12_171141) do
     t.datetime "remember_created_at"
     t.bigint "employee_id"
     t.bigint "customer_id"
+    t.boolean "admin", default: false
     t.index ["customer_id"], name: "index_users_on_customer_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["employee_id"], name: "index_users_on_employee_id"

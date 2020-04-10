@@ -1,0 +1,84 @@
+<%= form_with(model: intervention, local: true) do |form| %>
+<div class="container">
+    <div class="card border-primary">
+        <div class="card-body">
+            <div class="card-header bg-info">
+                <ul class="nav nav-tabs navbar-dark card-header-tabs justify-content-center text-white bg-info p-10">
+                    <li class="nav-item">
+                        <a class="nav-link text-light active" id="step1">Step 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" id="step2">Step 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" id="step3">Step 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" id="step4">Step 4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" id="step5">Step 5</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" id="step6">Step 6</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" id="step7">Step 7</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" id="step8">Submit</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="row pt-40">
+                <div class="col-md-4 text-center flex-row">
+                    <%= form.label :Customer, class: 'control-group text-white bg-dark mt-10 mb-30' %>
+                    <div class="controls">
+                        <%= form.select(:customer_id, Customer.all.collect {|c| ["#{c.company_name}", c.id]}.sort,  {prompt: "Select a customer"}, {:multiple => false }) %>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center flex-row">
+                    <%= form.label :Building, class: 'control-group text-white bg-dark mt-10 mb-30' %>
+                    <div class=" controls">
+                        <%= form.select(:building_id, Building.all.collect {|b| [b.id, b.id]}.sort,  {prompt: "Select a building"}, {:multiple => false }) %>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center flex-row">
+                    <%= form.label :Battery, class: 'control-group text-white bg-dark mt-10 mb-30' %>
+                    <div class="controls">
+                        <%= form.select(:battery_id, Battery.all.collect {|bt| [bt.id, bt.id]}.sort,  {prompt: "Select a battery"}, {:multiple => false }) %>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 text-center flex-row">
+                    <%= form.label :Column, class: 'control-group text-white bg-dark mt-10 mb-30' %>
+                    <div class="controls">
+                        <%= form.select(:column_id, Column.all.collect {|cl| [cl.id, cl.id]}.sort,  {prompt: "Select a column"}, {:multiple => false }) %>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <%= form.label :Elevator, class: 'control-group text-white bg-dark mt-10 mb-30' %>
+                    <div class="controls">
+                        <%= form.select(:elevator_id, Elevator.all.collect {|e| [e.id, e.id]}.sort,  {prompt: "Select an elevator"}, {:multiple => false }) %>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <%= form.label :Employee, class: 'control-group text-white bg-dark mt-10 mb-30' %>
+                    <div class="controls">
+                        <%= form.select(:employee_id, Employee.all.collect {|ee| [ee.first_name, ee.id]}.sort,  {prompt: "Select an employee"}, {:multiple => false }) %>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center text-white">
+                <%= form.label :'Add A Description Below', class: 'control-group bg-dark pt-20 pb-20' %>
+                <%= form.text_area :report, :rows => 7, style: 'width:100%;' %>
+            </div>
+            <div class="actions text-center pt-30 pb-30">
+                <%= form.submit :'Create a new intervention', class: 'btn btn-outline-info btn-lg'%>
+            </div>
+        </div>
+    </div>
+    <% end %>

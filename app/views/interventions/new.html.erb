@@ -1,0 +1,206 @@
+<div class="container mt-30">
+    <div class="card text-center border-primary bg-dark">
+        <h1 class="display-5 mt-35 text-white">Please fill out the form to request an intervention</h1>
+    </div>
+</div>
+<%= render 'form', intervention: @intervention %>
+
+<script>
+    //Step 1: make all the dropdowns "disabled"
+    $("#intervention_building_id").prop("disabled", true);
+    $("#intervention_battery_id").prop("disabled", true);
+    $("#intervention_column_id").prop("disabled", true);
+    $("#intervention_elevator_id").prop("disabled", true);
+    $("#intervention_employee_id").prop("disabled", true);
+    $("#intervention_report").prop("disabled", true);
+
+    //Step 2: activate building after customer is chosen
+    $("#intervention_customer_id").change(function() {
+        $('#step1').removeClass("active");
+        $('#step3').removeClass("active");
+        $('#step4').removeClass("active");
+        $('#step5').removeClass("active");
+        $('#step6').removeClass("active");
+        $('#step7').removeClass("active");
+        $('#step8').removeClass("active");
+        $('#step2').addClass("active")
+        console.log('change');
+        var customer_id = $(this).val();
+        console.log('customer_id', customer_id);
+        if (customer_id == '') {
+            $("#intervention_building_id").prop("disabled", true); //if no value, then building_id is disabled
+        } else {
+            $("#intervention_building_id").prop("disabled", false); //else it's not disabled
+        }
+
+        //ajax function
+        $.get('/interventions/get_buildings_for_customer', {
+            customer_id: customer_id
+        }, function(result) {
+            console.log('back from server');
+            console.log(result);
+            var buildings = result;
+            //console.log(buildings); <-- working
+            $("#intervention_building_id").empty();
+            $("#intervention_building_id").append('<option>Select a building</option>');
+            for (var i = 0; i < buildings.length; i++) {
+                $("#intervention_building_id").append('<option value="' + buildings[i]["id"] + '">' + buildings[i]["id"] + '</option>');
+            }
+        });
+    });
+
+    //Step 3: activate battery after building is clicked
+    $("#intervention_building_id").change(function() {
+        $('#step1').removeClass("active");
+        $('#step4').removeClass("active");
+        $('#step5').removeClass("active");
+        $('#step6').removeClass("active");
+        $('#step7').removeClass("active");
+        $('#step8').removeClass("active");
+        $('#step2').removeClass("active");
+        $('#step3').addClass("active")
+        console.log('change');
+        var building_id = $(this).val();
+        console.log('building_id', building_id);
+        if (building_id == '') {
+            $("#intervention_battery_id").prop("disabled", true);
+        } else {
+            $("#intervention_battery_id").prop("disabled", false);
+        }
+
+        //ajax function
+        $.get('/interventions/get_batteries_for_building', {
+            building_id: building_id
+        }, function(result) {
+            console.log('back from server');
+            var batteries = result;
+            console.log(result)
+            $("#intervention_battery_id").empty();
+            $("#intervention_battery_id").append('<option>Select a battery</option>');
+            for (var i = 0; i < batteries.length; i++) {
+                $("#intervention_battery_id").append('<option value="' + batteries[i]["id"] + '">' + batteries[i]["id"] + '</option>');
+            }
+        });
+
+    });
+
+    //Step 4: activate columns after battery is clicked
+    $("#intervention_battery_id").change(function() {
+        $('#step3').removeClass("active");
+        $('#step1').removeClass("active");
+        $('#step2').removeClass("active");
+        $('#step5').removeClass("active");
+        $('#step6').removeClass("active");
+        $('#step7').removeClass("active");
+        $('#step8').removeClass("active");
+        $('#step4').addClass("active")
+        console.log('change');
+        var battery_id = $(this).val();
+        console.log('battery_id', battery_id);
+        if (battery_id == '') {
+            $("#intervention_column_id").prop("disabled", true);
+        } else {
+            $("#intervention_column_id").prop("disabled", false);
+        }
+
+        //ajax function
+        $.get('/interventions/get_columns_for_battery', {
+            battery_id: battery_id
+        }, function(result) {
+            console.log('back from server');
+            var columns = result;
+            console.log(result)
+            $("#intervention_column_id").empty();
+            $("#intervention_column_id").append('<option>Select a column</option>');
+            for (var i = 0; i < columns.length; i++) {
+                $("#intervention_column_id").append('<option value="' + columns[i]["id"] + '">' + columns[i]["id"] + '</option>');
+            }
+        });
+    });
+
+    //Step 5: activate elevator after column is clicked
+    $("#intervention_column_id").change(function() {
+        $('#step1').removeClass("active");
+        $('#step3').removeClass("active");
+        $('#step2').removeClass("active");
+        $('#step6').removeClass("active");
+        $('#step7').removeClass("active");
+        $('#step8').removeClass("active");
+        $('#step4').removeClass("active");
+        $('#step5').addClass("active")
+        console.log('change');
+        var column_id = $(this).val();
+        console.log('column_id', column_id);
+        if (column_id == '') {
+            $("#intervention_elevator_id").prop("disabled", true);
+        } else {
+            $("#intervention_elevator_id").prop("disabled", false);
+        }
+
+        //ajax function
+        $.get('/interventions/get_elevators_for_column', {
+            column_id: column_id
+        }, function(result) {
+            console.log('back from server');
+            var elevators = result;
+            console.log(result)
+            $("#intervention_elevator_id").empty();
+            $("#intervention_elevator_id").append('<option>Select an elevator</option>');
+            for (var i = 0; i < elevators.length; i++) {
+                $("#intervention_elevator_id").append('<option value="' + elevators[i]["id"] + '">' + elevators[i]["id"] + '</option>');
+            }
+        });
+    });
+
+    //Step 6: activate employee after elevator is clicked
+    $("#intervention_elevator_id").change(function() {
+        $('#step1').removeClass("active");
+        $('#step3').removeClass("active");
+        $('#step4').removeClass("active");
+        $('#step2').removeClass("active");
+        $('#step7').removeClass("active");
+        $('#step8').removeClass("active");
+        $('#step5').removeClass("active");
+        $('#step6').addClass("active")
+        console.log('change');
+        var elevator_id = $(this).val();
+        console.log('elevator_id', elevator_id);
+        if (elevator_id == '') {
+            $("#intervention_employee_id").prop("disabled", true);
+        } else {
+            $("#intervention_employee_id").prop("disabled", false);
+        }
+    });
+
+    //Step 7: activate report form
+    $("#intervention_employee_id").change(function() {
+        $('#step1').removeClass("active");
+        $('#step3').removeClass("active");
+        $('#step4').removeClass("active");
+        $('#step5').removeClass("active");
+        $('#step2').removeClass("active");
+        $('#step8').removeClass("active");
+        $('#step6').removeClass("active");
+        $('#step7').addClass("active")
+        console.log('change');
+        var employee_id = $(this).val();
+        console.log('employee_id', employee_id);
+        if (employee_id == '') {
+            $("#intervention_report").prop("disabled", true);
+        } else {
+            $("#intervention_report").prop("disabled", false);
+        }
+    });
+
+    //Step 7: submit = active
+    $("#intervention_report").change(function() {
+        $('#step7').removeClass("active");
+        $('#step1').removeClass("active");
+        $('#step3').removeClass("active");
+        $('#step4').removeClass("active");
+        $('#step5').removeClass("active");
+        $('#step6').removeClass("active");
+        $('#step2').removeClass("active");
+        $('#step8').addClass("active")
+    });
+</script>

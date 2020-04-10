@@ -6,16 +6,15 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 # Employee.create!(first_name: 'admin', last_name: 'istrator', title: 'A', email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
-Employee.create!(first_name: 'admin', last_name: 'istrator', title: 'A', email: 'admin@example.com', password: 'password', password_confirmation: 'password')
-jack = Employee.create!(first_name: 'jackie', last_name: 'lai', title: 'B', email: 'jack@q', password: 'testing', password_confirmation: 'testing') 
-Employee.create!(first_name: '123', last_name: '321', title: '0', email: '123@123', password: '123123', password_confirmation: '123123') 
-
-Employee.create!(first_name: 'mathieu', last_name: 'houde', title: 'engineer', email: 'mathieu.houde@codeboxx.biz', password: '123456', password_confirmation: '123456') 
-Employee.create!(first_name: 'patrick', last_name: 'thibault', title: 'coach', email: 'tiboclan@gmail.com', password: '123456', password_confirmation: '123456') 
-Employee.create!(first_name: 'philippe', last_name: 'motillon', title: 'coach', email: 'philippe.motillon@keyrus.ca', password: '123456', password_confirmation: '123456') 
-Employee.create!(first_name: 'khalid', last_name: 'djado', title: 'coach', email: 'kdjado@gmail.com', password: '123456', password_confirmation: '123456') 
-Employee.create!(first_name: 'antoine', last_name: 'deblonde', title: 'coach', email: 'antoine.deblonde@keyrus.ca', password: '123456', password_confirmation: '123456') 
-Employee.create!(first_name: 'ibrahim', last_name: 'mahamane', title: 'coach', email: 'imahamaneissa@gmail.com', password: '123456', password_confirmation: '123456') 
+Employee.create!(first_name: 'Admin', last_name: 'Istrator', title: 'A', email: 'admin@example.com', password: 'password', password_confirmation: 'password')
+Employee.create!(first_name: 'Anna', last_name: 'Chowattanakul', title: 'manager', email: 'anna.chowattanakul@gmail.com', password: '123456', password_confirmation: '123456')
+jack = Employee.create!(first_name: 'Jackie', last_name: 'Lai', title: 'B', email: 'jack@q', password: 'testing', password_confirmation: 'testing') 
+Employee.create!(first_name: 'Mathieu', last_name: 'Houde', title: 'engineer', email: 'mathieu.houde@codeboxx.biz', password: '123456', password_confirmation: '123456') 
+Employee.create!(first_name: 'Patrick', last_name: 'Thibault', title: 'coach', email: 'tiboclan@gmail.com', password: '123456', password_confirmation: '123456') 
+Employee.create!(first_name: 'Philippe', last_name: 'Motillon', title: 'coach', email: 'philippe.motillon@keyrus.ca', password: '123456', password_confirmation: '123456') 
+Employee.create!(first_name: 'Khalid', last_name: 'Djado', title: 'coach', email: 'kdjado@gmail.com', password: '123456', password_confirmation: '123456') 
+Employee.create!(first_name: 'Antoine', last_name: 'Deblonde', title: 'coach', email: 'antoine.deblonde@keyrus.ca', password: '123456', password_confirmation: '123456') 
+Employee.create!(first_name: 'Ibrahim', last_name: 'Mahamane', title: 'coach', email: 'imahamaneissa@gmail.com', password: '123456', password_confirmation: '123456') 
 
 
 
