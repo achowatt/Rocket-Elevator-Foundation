@@ -1,5 +1,3 @@
-# ROCKET ELEVATORS API
-
 **WEEK 9 CONSOLIDATION** by ANNA CHOWATTANAKUL
 ----------------------------------------------
 Here are the commands for the RESTFUL API on AZURE:
@@ -56,8 +54,10 @@ For Testing Locally:
 7. Execute: rake db:migrate
 8. Exceute: rake db: seed
 
-Testing Api's: 
 
+
+# ROCKET ELEVATORS API (Week 8)
+Testing Api's: 
 1. Go to the Path where you clone the repo (cd NAME_OF_YOUR_FOLDER/)
 2. Be sure that mysql server is running (sudo service mysql status), response must be [OK]
 3. Run the server for the app: rails server
