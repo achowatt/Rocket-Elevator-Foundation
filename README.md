@@ -5,14 +5,7 @@ For Testing Locally:
 1. Git Clone this repo.
 2. The files database.yml, application.yml, ibm-credentials.env must be requested for security reasons. (Contact our team leader Ukeme).
 3. Copy the files database.yml adnd application.yml in the folder config. 
-   database.yml must have this info:
-   
-   <<: *default
-  username: USERNAME FOR CODEBOXX DATABASE
-  password: PASSWORD FOR CODEBOXX DATABASE
-  host: codeboxx.cq6zrczewpu2.us-east-1.rds.amazonaws.com
-  database: UkemeEkpenyong
-  
+   database.yml
 4. Copy the file ibm-credentials.env in the root folder.
 5. Execute: bundle update
 6. Execute: rake db:create
