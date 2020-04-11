@@ -24,7 +24,8 @@ https://annachowattanakulapi.azurewebsites.net/api/intervention/2/inProgress
 6. Change the status of the request for action to "Completed" and add an end date and time (Timestamp).
 https://annachowattanakulapi.azurewebsites.net/api/intervention/2/completed
 
-
+Check out my repo for REST_API for more info:
+https://github.com/achowatt/REST_API_ROCKET_ELEVATORS
 ----------------------------------------
 
 
