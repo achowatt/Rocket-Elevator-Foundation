@@ -9,22 +9,22 @@ GET REQUESTS**
 1. To see all the interventions
 https://annachowattanakulapi.azurewebsites.net/api/intervention/all
 
-To get an intervention by id
-2. https://annachowattanakulapi.azurewebsites.net/api/intervention/2
+2. To get an intervention by id
+https://annachowattanakulapi.azurewebsites.net/api/intervention/2
 
-Returns all fields of all Service Request records that do not have a start date and are in "Pending" status.
-3. https://annachowattanakulapi.azurewebsites.net/api/intervention/pending
+3. Returns all fields of all Service Request records that do not have a start date and are in "Pending" status.
+https://annachowattanakulapi.azurewebsites.net/api/intervention/pending
 
 
 PUT REQUESTS**
-Change value of any parameters
-4. https://annachowattanakulapi.azurewebsites.net/api/intervention/2
+4. Change value of any parameters
+https://annachowattanakulapi.azurewebsites.net/api/intervention/2
 
-Change the status of the intervention request to "InProgress" and add a start date and time (Timestamp).
-5. https://annachowattanakulapi.azurewebsites.net/api/intervention/2/inProgress
+5. Change the status of the intervention request to "InProgress" and add a start date and time (Timestamp).
+https://annachowattanakulapi.azurewebsites.net/api/intervention/2/inProgress
 
-Change the status of the request for action to "Completed" and add an end date and time (Timestamp). 
-6. https://annachowattanakulapi.azurewebsites.net/api/intervention/2/completed
+6. Change the status of the request for action to "Completed" and add an end date and time (Timestamp).
+https://annachowattanakulapi.azurewebsites.net/api/intervention/2/completed
 
 
 ----------------------------------------
@@ -34,10 +34,14 @@ ZENDESK ACCOUNT
 
 Email: anna.chowattanakul@gmail.com
 Pass: codeboxx123
-
 bananacompany.zendesk.com
 
 
+For admin login: 
+1) click Login
+2) choose employee Login
+3) user: coach's email , password: 123456
+or my email: anna.chowattanakul@gmail.com
 
 -----------------------------------------
 For Testing Locally:
