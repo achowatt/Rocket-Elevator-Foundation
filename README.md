@@ -1,5 +1,45 @@
 # ROCKET ELEVATORS API
 
+**WEEK 9 CONSOLIDATION** by ANNA CHOWATTANAKUL
+----------------------------------------------
+Here are the commands for the RESTFUL API on AZURE:
+https://annachowattanakulapi.azurewebsites.net/
+
+GET REQUESTS**
+1. To see all the interventions
+https://annachowattanakulapi.azurewebsites.net/api/intervention/all
+
+To get an intervention by id
+2. https://annachowattanakulapi.azurewebsites.net/api/intervention/2
+
+Returns all fields of all Service Request records that do not have a start date and are in "Pending" status.
+3. https://annachowattanakulapi.azurewebsites.net/api/intervention/pending
+
+
+PUT REQUESTS**
+Change value of any parameters
+4. https://annachowattanakulapi.azurewebsites.net/api/intervention/2
+
+Change the status of the intervention request to "InProgress" and add a start date and time (Timestamp).
+5. https://annachowattanakulapi.azurewebsites.net/api/intervention/2/inProgress
+
+Change the status of the request for action to "Completed" and add an end date and time (Timestamp). 
+6. https://annachowattanakulapi.azurewebsites.net/api/intervention/2/completed
+
+
+----------------------------------------
+
+
+ZENDESK ACCOUNT
+
+Email: anna.chowattanakul@gmail.com
+Pass: codeboxx123
+
+bananacompany.zendesk.com
+
+
+
+-----------------------------------------
 For Testing Locally:
 
 1. Git Clone this repo.
