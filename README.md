@@ -1,5 +1,28 @@
 **WEEK 9 CONSOLIDATION** by ANNA CHOWATTANAKUL
 ----------------------------------------------
+To start: 
+
+1) Go to annachowattanakul.ca
+2) Click log in on the home page
+
+For admin login: 
+1) click Login
+2) choose employee Login
+3) user: coach's email , password: 123456
+or my email: anna.chowattanakul@gmail.com
+
+3) Access the Intervention Request page
+4) Fill out the form
+5) Check Zendesk account
+
+ZENDESK ACCOUNT
+
+Email: anna.chowattanakul@gmail.com
+Pass: codeboxx123
+bananacompany.zendesk.com
+
+6) Check out my RESTFUL API app :)
+
 Here are the commands for the RESTFUL API on AZURE:
 https://annachowattanakulapi.azurewebsites.net/
 
@@ -26,23 +49,9 @@ https://annachowattanakulapi.azurewebsites.net/api/intervention/2/completed
 
 Check out my repo for REST_API for more info:
 https://github.com/achowatt/REST_API_ROCKET_ELEVATORS
-----------------------------------------
 
+-----------------------------------------------------
 
-ZENDESK ACCOUNT
-
-Email: anna.chowattanakul@gmail.com
-Pass: codeboxx123
-bananacompany.zendesk.com
-
-
-For admin login: 
-1) click Login
-2) choose employee Login
-3) user: coach's email , password: 123456
-or my email: anna.chowattanakul@gmail.com
-
------------------------------------------
 For Testing Locally:
 
 1. Git Clone this repo.
