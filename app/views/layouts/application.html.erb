@@ -30,6 +30,7 @@
     <script src='//underscorejs.org/underscore-min.js' type='text/javascript'></script>
 
 
+
 <body>
     <%= stylesheet_link_tag "essentials" %>
     <%= stylesheet_link_tag "layout" %>
@@ -42,6 +43,8 @@
             font-family: 'Roboto', 'FontAwesome' !important;
         }
     </style>
+
+    <%= yield :recaptcha_js %>
     </head>
 
     <body class="smoothscroll enable-animation grain-blue">

@@ -51,6 +51,7 @@ gem 'whenever', require: false
 gem "chartkick"
 gem 'http'
 gem 'dropbox_api'
+gem "recaptcha"
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

@@ -44,7 +44,7 @@ class InterventionsController < InheritedResources::Base
 
   def create
     @intervention = Intervention.new(intervention_params)
-        
+  
       #Create ticket on Zendesk from Intervention Form
       @intervention.author = current_employee.id
       @CompanyName = Customer.find(intervention_params[:customer_id]).company_name
@@ -68,10 +68,12 @@ class InterventionsController < InheritedResources::Base
       :type => "problem",
       :priority => "urgent")
 
-    if @intervention.save
+    if verify_recaptcha(model: @intervention)&& @intervention.save
       puts params
-      flash[:notice] = "add new intervention was successful "
-      redirect_to :index
+      # flash[:notice] = "add new intervention was successful "
+      # redirect_to :index
+      format.html { redirect_to @intervention, notice: 'Intervention request was successfully created.' }
+      format.json { render :show, status: :created, location: @intervention }
     else
       flash[:notice] = "add new intervention was not successful "
       redirect_to action:"new"

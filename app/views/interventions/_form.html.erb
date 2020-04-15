@@ -76,9 +76,12 @@
                 <%= form.label :'Add A Description Below', class: 'control-group bg-dark pt-20 pb-20' %>
                 <%= form.text_area :report, :rows => 7, style: 'width:100%;' %>
             </div>
+            <%= recaptcha_tags %>
+
             <div class="actions text-center pt-30 pb-30">
                 <%= form.submit :'Create a new intervention', class: 'btn btn-outline-info btn-lg'%>
             </div>
+
         </div>
     </div>
     <% end %>
