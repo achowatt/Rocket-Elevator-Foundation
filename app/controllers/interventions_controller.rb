@@ -44,6 +44,7 @@ class InterventionsController < InheritedResources::Base
 
   def create
     @intervention = Intervention.new(intervention_params)
+    
     if verify_recaptcha(model: @intervention) && @intervention.save
       puts params
       flash[:notice] = "add new intervention was successful "
