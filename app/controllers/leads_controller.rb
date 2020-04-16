@@ -15,6 +15,7 @@ class LeadsController < ApplicationController
     @lead.attached_file = lead_params['attached_file']
 
     #render json: @lead #test when submit button form
+
     if verify_recaptcha(model: @lead) && @lead.save
       puts params
       flash[:notice] = "We received your request!"
