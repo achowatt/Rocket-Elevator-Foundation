@@ -44,8 +44,7 @@ class InterventionsController < InheritedResources::Base
 
   def create
     @intervention = Intervention.new(intervention_params)
-      if verify_recaptcha(:model => @intervention )
-          if  @intervention.save
+        if verify_recaptcha(:model => @intervention ) && @intervention.save
             puts params
             flash[:notice] = "add new intervention was successful "
             redirect_to :index
@@ -72,14 +71,11 @@ class InterventionsController < InheritedResources::Base
             },
             :type => "problem",
             :priority => "urgent")
-          else
-            flash[:notice] = "add new intervention was not successful "
-            redirect_to action:"new"
-          end
-      else
-          flash.delete(:recaptcha_error)
-          flash.now[:error] = "Incorrect word verification. Are you sure you\'re human?"
-      end
+        else
+              flash[:notice] = "add new intervention was not successful "
+              redirect_to action:"new"
+        end
+
   end
 
 

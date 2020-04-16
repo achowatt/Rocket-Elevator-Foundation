@@ -80,6 +80,7 @@
             <div class="text-center">
                 <%= recaptcha_tags %>
             </div>
+            <p id="error"><%= flash[:error] %></p>
 
             <div class="actions text-center pt-30 pb-30">
                 <%= form.submit :'Create a new intervention', class: 'btn btn-outline-info btn-lg'%>
