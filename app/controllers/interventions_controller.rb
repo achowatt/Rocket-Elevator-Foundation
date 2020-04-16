@@ -68,12 +68,11 @@ class InterventionsController < InheritedResources::Base
       :type => "problem",
       :priority => "urgent")
 
-    if verify_recaptcha(model: @intervention)&& @intervention.save
+    if verify_recaptcha(model: @intervention) && @intervention.save
       puts params
-      # flash[:notice] = "add new intervention was successful "
-      # redirect_to :index
-      format.html { redirect_to @intervention, notice: 'Intervention request was successfully created.' }
-      format.json { render :show, status: :created, location: @intervention }
+      flash[:notice] = "add new intervention was successful "
+      redirect_to :index
+
     else
       flash[:notice] = "add new intervention was not successful "
       redirect_to action:"new"
