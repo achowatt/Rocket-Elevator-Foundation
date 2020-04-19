@@ -1,29 +1,32 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
 <%= render "devise/shared/error_messages", resource: resource %>
-<div class="col-md-6 text-center mt-100">
-    <div class="card border-dark mb-10 mt-10 mx-auto" style="max-width: 18rem;">
+<div class="text-center mt-100 mb-100 ml-100 mr-100">
+
+    <div class=" card border-dark bg-transparent mb-10 mt-10 mx-auto " style="-webkit-box-shadow: -4px 4px 57px 35px rgba(0,0,0,0.75);
+-moz-box-shadow: -4px 4px 57px 35px rgba(0,0,0,0.75);
+box-shadow: -4px 4px 57px 35px rgba(0,0,0,0.75);">
         <div class="bg-transparent border-info">
-            <h3 class="card-header text-center text-info">Sign Up</h3>
+            <h3 class="card-header text-center text-info" style="text-shadow: 2px 2px 4px #000000;">Sign Up</h3>
         </div>
-        <div class="field">
-            <%= f.label :email %>
+        <div class="field mt-20">
+            <%= f.label :email, style:"text-shadow: 2px 2px 4px #000000;" %>
             <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
         </div>
         <div class="field mt-20">
-            <%= f.label :password %>
+            <%= f.label :password, style:"text-shadow: 2px 2px 4px #000000;" %>
             <%= f.password_field :password, autocomplete: "new-password" %> <br>
-            <em>(8 characters minimum)</em>
+            <em style="text-shadow: 2px 2px 4px #000000;">(8 characters minimum)</em>
         </div>
         <br>
         <div class="field">
-            <%= f.label :password_confirmation %>
+            <%= f.label :password_confirmation, style:"text-shadow: 2px 2px 4px #000000;" %>
             <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
         </div>
 
         <div class="actions">
-            <%= f.submit "Sign up", class: "btn" %>
+            <%= f.submit "Sign up", class: "btn btn-info mt-20 mb-20" %>
         </div>
-        <div class="card-footer bg-transparent border-info"><%= link_to "Log in", new_session_path(resource_name) %></div>
+        <div class="card-footer bg-transparent border-dark"><%= link_to "Log in", new_session_path(resource_name), class:"text-white", style:"text-shadow: 2px 2px 4px #000000;"%></div>
 
     </div>
 </div>
