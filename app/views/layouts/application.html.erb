@@ -80,7 +80,7 @@
                                             <%= link_to 'CORPORATE', corporate_path %>
                                         </li>
                                         <li>
-                                            <%= link_to 'GET QUOTE', quoteform_path %>
+                                            <%= link_to 'GET QUOTE', new_quote_path %>
                                         </li>
                                     </ul>
                                 </li>
@@ -110,15 +110,15 @@
                                 <li>
                                     <% if user_signed_in? %>
                                 <li>
-                                    <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+                                    <%= link_to('LOGOUT', destroy_user_session_path, method: :delete) %>
                                 </li>
                                 <% elsif  employee_signed_in?%>
                                 <li>
-                                    <%= link_to('Logout', destroy_employee_session_path, method: :delete) %>
+                                    <%= link_to('LOGOUT', destroy_employee_session_path, method: :delete) %>
                                 </li>
                                 <% else%>
                                 <li>
-                                    <%= link_to('Login', new_user_session_path) %>
+                                    <%= link_to('LOGIN', new_user_session_path) %>
                                 </li>
                                 <% end %>
                                 </li>

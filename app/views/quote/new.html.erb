@@ -1,6 +1,15 @@
-<%= form_for @quote, url:{action:"create"} do |f| %>
-<%= render partial: "quote/form", :locals =>{:f => f}  %>
-<%= recaptcha_tags %>
-<%= f.submit("Submit", :class => "btn btn-primary btn-lg btn-block fs-15")  %>
-<%= render partial: "quote/form_end", :locals =>{:f => f}  %>
-<% end %>
+				<!-- Parallax -->
+				<section class="parallax parallax-1" style="background-image: url('/assets/AdobeStock_103570025.jpeg');">
+				    <div class="overlay dark-4">
+				        <!-- dark overlay [1 to 9 opacity] -->
+				    </div>
+
+				    <div class="container">
+				        <div class="text-center">
+				            <h1 class="fs-300 fw-300">QUOTATION</h1>
+				        </div>
+
+				    </div>
+				</section>
+				<!-- /Parallax -->
+				<%= render 'form', quote: @quote %>
