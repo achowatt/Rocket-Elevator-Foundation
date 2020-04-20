@@ -1,12 +1,16 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+# Run against the latest stable release
+group :development, :test do
+  gem 'rspec-rails', '~> 4.0.0'
+end
+
+
 ruby '2.6.5'
 gem 'sendgrid-ruby'
 
 gem 'json', '~> 1.8', '>= 1.8.3'
-gem 'colorize'
-gem 'dropbox_api'
 gem "zendesk_api", git: 'https://github.com/zendesk/zendesk_api_client_rb'
 gem "active_material", github: "vigetlabs/active_material"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
