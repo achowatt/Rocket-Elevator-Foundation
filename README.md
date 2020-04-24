@@ -1,3 +1,24 @@
+**WEEK 11 QUALITY** by ANAN CHOWATTANAKUL
+To start:
+1) clone the rails app
+2) spec file folder 4 test files:
+    - streamer_spec.rb
+    - user_login_spec.rb
+    - user_logout_spec.rb
+    - new_user_spec.rb
+    
+    Run the following command to test all those features:
+    bundle exec rspec ./spec/streamer_spec.rb --format documentation     
+    bundle exec rspec ./spec/user_logout_spec.rb --format documentation
+    bundle exec rspec ./spec/user_login_spec.rb --format documentation
+    bundle exec rspec ./spec/new_user_spec.rb --format documentation
+    
+3) The code for streamer can be found inside Lib/ElevatorMedia/Streamer.rb
+4) See streamer code inside view at: localhost:3000/pokemon (shows weather, joke, and pokemon)
+
+That's all! Have a great week :)
+
+
 **WEEK 9 CONSOLIDATION** by ANNA CHOWATTANAKUL
 ----------------------------------------------
 To start: 
