@@ -1,4 +1,5 @@
-**WEEK 11 QUALITY** by ANAN CHOWATTANAKUL
+**WEEK 11 QUALITY** by ANNA CHOWATTANAKUL
+-----------------------------------------
 To start:
 1) clone the rails app
 2) spec file folder 4 test files:
