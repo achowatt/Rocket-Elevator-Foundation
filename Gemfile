@@ -1,11 +1,15 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-# Run against the latest stable release
-group :development, :test do
+group :test, :development do
   gem 'rspec-rails', '~> 4.0.0'
 end
 
+gem "rspec"
+gem 'webmock', '~> 2.1'
+
+#open-weather 
+gem 'open-weather'
 
 ruby '2.6.5'
 gem 'sendgrid-ruby'

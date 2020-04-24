@@ -28,6 +28,7 @@ Rails.application.routes.draw do
   get 'sign_up' => 'users#sign_up'
   get 'sign_in' => 'users#sign_in'
   get 'leads' => 'leads#new'
+  get 'pokemon' => 'pages#pokemon'
 
   # namespace :admin do
   #   resources :addresses do

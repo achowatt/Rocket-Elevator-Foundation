@@ -1,0 +1,769 @@
+  [1m[35m (46.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (46.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (47.3ms)[0m  [1m[35mBEGIN[0m
+Processing by InterventionsController#create as HTML
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (47.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (49.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (49.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (45.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (48.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (50.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (46.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (51.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (52.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (48.0ms)[0m  [1m[35mBEGIN[0m
+Processing by QuoteController#create as HTML
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (45.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (52.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (49.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (47.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (54.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (63.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (50.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (49.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (50.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (47.0ms)[0m  [1m[35mBEGIN[0m
+Processing by QuoteController#create as HTML
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (48.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (51.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (52.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (59.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (51.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (53.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (54.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (49.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (51.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (45.3ms)[0m  [1m[35mBEGIN[0m
+Started GET "/admin/login" for 127.0.0.1 at 2020-04-24 13:57:11 -0400
+Processing by ActiveAdmin::Devise::SessionsController#new as HTML
+  Rendering .bundle/ruby/2.6.0/gems/activeadmin-2.7.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out
+  Rendered .bundle/ruby/2.6.0/gems/activeadmin-2.7.0/app/views/active_admin/devise/shared/_links.erb (2.0ms)
+  Rendered .bundle/ruby/2.6.0/gems/activeadmin-2.7.0/app/views/active_admin/devise/sessions/new.html.erb within layouts/active_admin_logged_out (42.4ms)
+Completed 500 Internal Server Error in 4857ms (ActiveRecord: 153.7ms)
+  [1m[35m (148.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (46.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (52.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (50.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (49.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (45.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (48.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (49.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (53.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (46.8ms)[0m  [1m[35mBEGIN[0m
+Started GET "/user/login" for 127.0.0.1 at 2020-04-24 13:58:53 -0400
+  [1m[35m (47.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (50.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (52.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (47.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (57.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (48.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (55.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (57.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (52.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (47.4ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 14:00:15 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.6ms)
+Completed 500 Internal Server Error in 2587ms (ActiveRecord: 160.4ms)
+  [1m[35m (49.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (48.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (51.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (47.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (49.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (49.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (51.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (51.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (50.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (45.0ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 14:16:38 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 6021ms (Views: 5844.9ms | ActiveRecord: 158.6ms)
+  [1m[35m (49.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (51.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (47.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (55.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (161.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (47.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (49.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (47.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (52.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (45.8ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 14:19:10 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 1767ms (Views: 1602.7ms | ActiveRecord: 148.0ms)
+  [1m[35m (49.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (52.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (105.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (47.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (53.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (51.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (51.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (52.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (56.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (48.7ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 14:19:33 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 1898ms (Views: 1734.9ms | ActiveRecord: 146.1ms)
+  [1m[35m (51.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (51.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (57.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (55.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (49.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (49.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (49.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (85.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (56.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (46.3ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 14:19:50 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 1667ms (Views: 1496.4ms | ActiveRecord: 154.0ms)
+  [1m[35m (54.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (45.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (55.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (50.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (50.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (45.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (51.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (51.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (54.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (46.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 14:20:41 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 1637ms (Views: 1473.2ms | ActiveRecord: 147.5ms)
+  [1m[35m (53.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (47.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (51.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (48.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (49.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (49.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (49.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (49.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (47.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (129.3ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 14:21:36 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 2275ms (Views: 2101.3ms | ActiveRecord: 157.8ms)
+  [1m[35m (50.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (47.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (123.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (54.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (55.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (50.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (50.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (51.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (49.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (47.5ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 14:22:08 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 1899ms (Views: 1732.6ms | ActiveRecord: 150.7ms)
+  [1m[35m (50.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (46.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (49.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (47.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (50.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (49.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (47.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (47.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (65.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (51.8ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 14:22:31 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 2937ms (Views: 2772.7ms | ActiveRecord: 144.4ms)
+  [1m[35m (46.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (51.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (50.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (48.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (79.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (60.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (51.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (48.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (51.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (59.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 14:40:12 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 2165ms (Views: 1988.7ms | ActiveRecord: 158.2ms)
+  [1m[35m (47.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (50.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (51.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (51.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/up" for 127.0.0.1 at 2020-04-24 14:45:57 -0400
+  [1m[35m (48.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (48.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (52.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (47.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (55.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (50.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (49.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (47.3ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 14:46:06 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 2357ms (Views: 2188.3ms | ActiveRecord: 150.4ms)
+  [1m[35m (46.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (51.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (51.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (49.9ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-24 14:46:47 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.8ms)
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 2249ms (Views: 2080.9ms | ActiveRecord: 152.7ms)
+  [1m[35m (203.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (56.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (52.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (54.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (50.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (45.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (55.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (50.8ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 14:46:55 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (51.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (49.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (51.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (50.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-24 14:53:33 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.7ms)
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 2614ms (Views: 2444.3ms | ActiveRecord: 153.1ms)
+  [1m[35m (238.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (49.2ms)[0m  [1m[35mBEGIN[0m
+Processing by QuoteController#create as HTML
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (52.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (46.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (50.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (57.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (52.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (49.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (51.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (49.7ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 14:53:42 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (51.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (57.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (50.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (45.5ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-24 14:55:00 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.4ms)
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 2217ms (Views: 1679.7ms | ActiveRecord: 521.1ms)
+  [1m[35m (53.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (47.2ms)[0m  [1m[35mBEGIN[0m
+Processing by QuoteController#create as HTML
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (47.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (51.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (130.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (49.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (58.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (49.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (53.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (51.6ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 14:55:08 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 12ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (51.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (49.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (51.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (54.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-24 14:57:49 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 2181ms (Views: 2015.0ms | ActiveRecord: 148.2ms)
+  [1m[35m (47.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (47.4ms)[0m  [1m[35mBEGIN[0m
+Processing by QuoteController#create as HTML
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (44.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (46.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (49.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (53.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (60.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (45.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (50.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (48.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 14:57:57 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (48.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (72.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (54.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (47.0ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-24 15:01:10 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (1.2ms)
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 3001ms (Views: 2833.1ms | ActiveRecord: 146.4ms)
+  [1m[35m (54.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (51.5ms)[0m  [1m[35mBEGIN[0m
+Processing by QuoteController#create as HTML
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms)
+  [1m[35m (47.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (51.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (50.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (48.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (54.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (48.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (50.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (50.0ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 15:01:22 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (47.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (46.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (50.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (54.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-24 15:14:08 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.6ms)
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 2003ms (Views: 1831.1ms | ActiveRecord: 156.4ms)
+  [1m[35m (49.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (45.9ms)[0m  [1m[35mBEGIN[0m
+Processing by QuoteController#create as HTML
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (47.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (47.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (52.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (46.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (51.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (53.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (54.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (49.4ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 15:14:19 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (48.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (53.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (52.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (46.5ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-24 15:28:42 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 1928ms (Views: 1759.8ms | ActiveRecord: 153.1ms)
+  [1m[35m (49.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (54.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (53.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (53.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (44.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (50.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (52.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (52.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (47.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (46.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (51.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (46.0ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 15:28:50 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (46.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (54.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (52.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (45.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-24 15:30:29 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 2099ms (Views: 1928.3ms | ActiveRecord: 154.4ms)
+  [1m[35m (51.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (50.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (47.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (47.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (51.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (56.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (49.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (53.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (49.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (49.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (54.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (120.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 15:30:36 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (49.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (53.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (51.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (52.0ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-24 15:34:28 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 2132ms (Views: 1969.0ms | ActiveRecord: 147.5ms)
+  [1m[35m (49.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (45.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (55.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (48.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (56.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (48.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (64.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (45.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (54.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (46.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (47.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (46.5ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 15:34:37 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (45.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (48.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (48.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (48.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (50.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (50.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-24 15:37:25 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 1916ms (Views: 1754.9ms | ActiveRecord: 145.7ms)
+  [1m[35m (54.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (49.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (50.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (48.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (47.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (46.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (50.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (50.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (52.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (47.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (53.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (50.4ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 15:37:33 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (48.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (55.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (51.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (45.0ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-24 15:38:17 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.8ms)
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 1771ms (Views: 1601.5ms | ActiveRecord: 153.0ms)
+  [1m[35m (48.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (59.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (52.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (50.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (46.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (50.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (53.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (50.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (51.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (51.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (52.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (46.6ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 15:38:23 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (49.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (56.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (70.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (57.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-24 15:39:11 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (1.0ms)
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 1977ms (Views: 1518.4ms | ActiveRecord: 443.3ms)
+  [1m[35m (140.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (46.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (49.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (51.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (53.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (50.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (53.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (45.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (54.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (47.4ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 15:39:18 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (46.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (53.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (60.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (47.6ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-24 15:43:37 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 2015ms (Views: 1826.4ms | ActiveRecord: 173.8ms)
+  [1m[35m (51.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (47.7ms)[0m  [1m[35mBEGIN[0m
+Processing by QuoteController#create as HTML
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (47.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (54.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (51.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (57.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (128.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (48.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (54.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (47.8ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 15:43:45 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (47.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (54.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (81.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (47.0ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-24 15:44:30 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.9ms)
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 2720ms (Views: 2542.3ms | ActiveRecord: 153.1ms)
+  [1m[35m (47.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (50.7ms)[0m  [1m[35mBEGIN[0m
+Processing by QuoteController#create as HTML
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (47.7ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (46.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (50.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (47.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (50.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (51.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (48.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (47.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 15:44:39 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 13ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (49.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (47.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (51.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (53.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (53.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (51.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (53.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (49.8ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-24 16:20:43 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 2165ms (Views: 1996.1ms | ActiveRecord: 152.8ms)
+  [1m[35m (50.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (47.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (45.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (47.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (50.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (52.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (49.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (48.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (47.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (47.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (46.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (48.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 16:20:51 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (47.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (53.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (50.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (50.3ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-24 16:51:17 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 2110ms (Views: 1946.7ms | ActiveRecord: 147.7ms)
+  [1m[35m (49.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (53.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (49.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (49.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (52.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (51.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (52.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (52.6ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 16:51:24 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (48.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (48.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (51.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (48.4ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_out" for 127.0.0.1 at 2020-04-24 17:02:17 -0400
+  [1m[35m (45.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (51.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (51.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (48.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (49.0ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (48.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (49.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (46.5ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_out" for 127.0.0.1 at 2020-04-24 17:09:29 -0400
+  [1m[35m (47.8ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (50.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (53.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (47.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (46.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (47.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (59.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (47.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (46.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (52.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (47.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (51.0ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_out" for 127.0.0.1 at 2020-04-24 17:13:33 -0400
+  [1m[35m (47.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (49.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (50.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (47.3ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_out" for 127.0.0.1 at 2020-04-24 17:14:27 -0400
+  [1m[35m (49.6ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (49.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (51.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (47.9ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 17:16:06 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 2765ms (Views: 2594.1ms | ActiveRecord: 152.8ms)
+  [1m[35m (47.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (53.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (73.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (56.9ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 17:18:31 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 2950ms (Views: 2749.2ms | ActiveRecord: 181.2ms)
+  [1m[35m (49.9ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (50.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (63.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (46.7ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-24 17:19:55 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 2385ms (Views: 2189.0ms | ActiveRecord: 159.7ms)
+  [1m[35m (49.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (49.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (49.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (50.7ms)[0m  [1m[35mBEGIN[0m
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-04-24 17:20:39 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 2082ms (Views: 1911.2ms | ActiveRecord: 155.6ms)
+  [1m[35m (334.1ms)[0m  [1m[31mROLLBACK[0m

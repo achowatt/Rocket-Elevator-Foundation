@@ -3,6 +3,7 @@
 .bash*
 .mysql_history 
 ### Rails ###
+bin
 *.rbc
 capybara-*.html
 .rspec
