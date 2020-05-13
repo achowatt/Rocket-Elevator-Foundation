@@ -4,6 +4,13 @@ require "capistrano/setup"
 # Include default deployment tasks
 require "capistrano/deploy"
 
+# Anna just added this
+require 'capistrano/bundler'
+require 'capistrano/rvm'
+require 'capistrano/rails/assets' # for asset handling add
+require 'capistrano/rails/migrations' # for running migrations
+require 'capistrano/puma'
+
 # Load the SCM plugin appropriate to your project:
 #
 # require "capistrano/scm/hg"
@@ -38,8 +45,6 @@ require "capistrano/rails"
 require "capistrano/puma"
 install_plugin Capistrano::Puma
 install_plugin Capistrano::Puma::Nginx
-
-require 'capistrano/rake'
 
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
