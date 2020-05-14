@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 group :test, :development do
   gem 'rspec-rails', '~> 4.0.0'
 end
-
+gem 'newrelic_rpm'
 gem "rspec"
 gem 'webmock', '~> 2.1'
 

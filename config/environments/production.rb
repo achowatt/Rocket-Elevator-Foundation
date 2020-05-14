@@ -91,6 +91,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   Rails.application.config.assets.precompile += %w( *.js ^[^_]*.css *.css.erb )
+  config.public_file_server.enabled = false
   config.active_record.dump_schema_after_migration = false
 end
 
