@@ -103,6 +103,8 @@ GEM
     capistrano-rails (1.4.0)
       capistrano (~> 3.1)
       capistrano-bundler (~> 1.1)
+    capistrano-rake (0.2.0)
+      capistrano (>= 3.0)
     capistrano-rvm (0.1.2)
       capistrano (~> 3.0)
       sshkit (~> 1.2)
@@ -332,6 +334,9 @@ GEM
     ruby_http_client (3.5.0)
     rubytest (0.8.1)
     rubyzip (2.3.0)
+    rvm1-capistrano3 (1.4.0)
+      capistrano (~> 3.0)
+      sshkit (>= 1.2)
     safe_yaml (1.0.5)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
@@ -419,9 +424,10 @@ DEPENDENCIES
   bootsnap (>= 1.1.0)
   bootstrap (~> 4.4.1)
   byebug
-  capistrano
-  capistrano-bundler
-  capistrano-rails
+  capistrano (~> 3.10)
+  capistrano-bundler (>= 1.1.0)
+  capistrano-rails (~> 1.4)
+  capistrano-rake
   capistrano-rvm
   capistrano3-puma
   capybara (>= 2.15)
@@ -456,6 +462,7 @@ DEPENDENCIES
   recaptcha
   rspec
   rspec-rails (~> 4.0.0)
+  rvm1-capistrano3
   sass-rails (~> 5.0)
   selenium-webdriver
   sendgrid-ruby
