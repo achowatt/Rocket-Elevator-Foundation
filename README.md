@@ -36,8 +36,6 @@ For admin login:
 1) click Login
 2) choose employee Login
 3) user: coach's email , password: 123456
-or my email: anna.chowattanakul@gmail.com
-
 3) Access the Intervention Request page
 4) Fill out the form
 5) Check Zendesk account
