@@ -44,10 +44,6 @@ or my email: anna.chowattanakul@gmail.com
 
 ZENDESK ACCOUNT
 
-Email: anna.chowattanakul@gmail.com
-Pass: codeboxx123
-bananacompany.zendesk.com
-
 6) Check out my RESTFUL API app :)
 
 Here are the commands for the RESTFUL API on AZURE:
